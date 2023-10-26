@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vertical Tabs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+            type='text/css'
+        >
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+
+        <style>
+            html, body {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family: "Times New Roman", arial, Verdana;
+	color: #817a53;
+	background: #d8d6cb;
+}
+
+p { margin: 0; padding: 4px; }
+
+div {	margin: 0; padding: 0;}
+
+#wrapper {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	width:740px;
+	height:680px;
+	margin: -340px 0 0 -370px;
+	padding: 0;
+}
+
+/* Header start */
+#header {
+	text-align: center;
+	margin: 0 0 30px 0;
+	padding: 15px 0 15px 0;
+}
+
+#txt_title {
+	color: #3d381b;
+	font-size: 34px;
+	text-align:center;
+	text-shadow: 0 -1px 2px rgba(255,255,255,.5);
+}
+
+#txt_subtitle {
+	font-size: 17px;
+	text-align: center;
+}
+/* Header end */
+
+/* Label and percentage data start */
+#labels {
+	position: absolute;
+	left: 540px;
+	top: 150px;
+	width: 120px;
+}
+
+#percentage_wrapper {
+	position: absolute;
+	left: 665px;
+	top: 151px;
+	width: 50px;
+	height: 124px;
+	overflow: hidden;
+}
+	
+#percentage {
+	position: absolute;
+	clip: rect(0px, 50px, 125px, 0px);
+}
+
+#labels ul, #percentage ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #333333;
+}
+
+#labels li, #percentage li {
+	display: block;
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+
+#labels span{
+	display: block;
+	float: left;
+	width:8px;
+	height: 8px;
+	margin: 5px 5px 0 0 ;
+	background: #FFFFFF;
+}
+
+#labels ul :nth-child(1) span{ background: #0092B9; }
+#labels ul :nth-child(2) span{ background: #86AD00; }
+#labels ul :nth-child(3) span{ background: #F2B705; }
+#labels ul :nth-child(4) span{ background: #D97904; }
+#labels ul :nth-child(5) span{ background: #BC3603; }
+
+#percentage p {
+	display: block;
+	width: 50px;
+	margin: 0;
+	padding: 0 0 8px 0;
+	float: left;
+}
+
+#percentage ul {
+	position: absolute;
+	width: 300px;
+}
+
+#q2_2010:target #percentage ul { left: -0px; }
+#q1_2010:target #percentage ul { left: -50px; }
+#q4_2009:target #percentage ul { left: -100px; }
+#q3_2009:target #percentage ul { left: -150px; }
+#q2_2009:target #percentage ul { left: -200px; }
+#q1_2005:target #percentage ul { left: -250px; }
+/* Label and percentage data end */
+
+/* Slider (contains two chart div) start */
+#slider {
+	width:300px;
+	height: 350px;
+	margin: 0 auto;
+	padding: 0 auto;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+#slider::-webkit-scrollbar { /* webkit only */
+  height: 12px;
+   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#beb8a1), to(#cfcab9));
+   -webkit-border-radius: 6px;
+}
+ 
+#slider::-webkit-scrollbar-thumb { /* webkit only */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c8775), to(#7f7a6a));
+  -webkit-border-radius: 6px;
+}
+
+#pie_ico, #pyr_ico {
+	position: absolute;
+	width: 80px;
+	height: 26px;
+	top: 464px;
+	text-align: center;
+}
+
+#pie_ico { left: 137px}
+#pyr_ico { left: 535px}
+/* Slider end */
+
+/* Charts start */
+#chart_holder {
+	width: 600px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+}
+
+#pyr_chart , #pie_chart {
+	position: relative;
+	float: left;
+ 	width: 300px;
+ 	height: 300px;
+ 	margin: 0;
+ 	padding: 0;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2) ));
+}
+
+#pyr_chart ul , #pie_chart ul {
+	list-style-type: none;
+	width: 300px;
+	height: 300px;
+	padding: 0;
+ 	margin: 0;
+}
+	
+#pyr_chart li, #pie_chart li {
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	height: 300px;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+#pie_chart p {
+	width: 300px;
+	height: 300px;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+#pie_chart li p { -webkit-transition: all .7s ease-out;}
+
+#pie_chart span { display: block; width: 150px; height: 300px;}
+
+#pie_chart ul :nth-child(odd) { clip: rect(0px, 300px, 300px, 150px);}
+
+#pie_chart ul :nth-child(even) { clip: rect(0px, 150px, 300px, 0px);}
+
+.pie_left{
+	-moz-border-radius-topleft: 150px;
+	-moz-border-radius-bottomleft: 150px;
+	-webkit-border-top-left-radius: 150px;
+	-webkit-border-bottom-left-radius: 150px;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+}
+
+.pie_right{
+	margin-left: 150px;
+	-moz-border-radius-topright: 150px;
+	-moz-border-radius-bottomright: 150px;
+	-webkit-border-top-right-radius: 150px;
+	-webkit-border-bottom-right-radius: 150px;
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+}
+
+#c1_l span {
+	background: #BC3603;
+	background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+	background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#de3d00), to(#BC3603));
+}
+
+#c1_r span {
+	background: #BC3603;
+	background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+	background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#de3d00), to(#BC3603));
+}
+ 
+#c2_l span {
+	background: #D97904;
+	background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+	background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#fb8a00), to(#D97904));
+}
+
+#c2_r span {
+	background: #D97904;
+	background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+	background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#fb8a00), to(#D97904));
+}
+
+#c3_l span {
+	background: #F2B705;
+	background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+	background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#ffc517), to(#F2B705));
+}
+
+#c3_r span {
+	background: #F2B705;
+	background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+	background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#ffc517), to(#F2B705));
+}
+
+#c4_l span {
+	background: #86AD00;
+	background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+	background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#9bc800), to(#86AD00));
+}
+
+#c4_r span {
+	background: #86AD00;
+	background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+	background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#9bc800), to(#86AD00));
+}
+
+#c5_l span{ 
+	background: #0092B9;
+	background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+	background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#00addb), to(#0092B9));
+}
+
+#c5_r span{
+	background: #0092B9;
+	background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+	background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#00addb), to(#0092B9));
+}
+
+/*Pie chart data (degree value) */
+#pie_chart ul :nth-child(1) p, #q2_2010:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(2) p, #q2_2010:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(3) p, #q2_2010:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(4) p, #q2_2010:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(170deg); -webkit-transform: rotate(170deg); -o-transform: rotate(170deg);}
+#pie_chart ul :nth-child(5) p, #q2_2010:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(6) p, #q2_2010:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(152deg); -webkit-transform: rotate(152deg); -o-transform: rotate(152deg);}
+#pie_chart ul :nth-child(7) p, #q2_2010:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(8) p, #q2_2010:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(126deg); -webkit-transform: rotate(126deg); -o-transform: rotate(126deg);}
+#pie_chart ul :nth-child(9) p, #q2_2010:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#pie_chart ul :nth-child(10) p, #q2_2010:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(36deg); -webkit-transform: rotate(36deg); -o-transform: rotate(36deg);}
+
+#q1_2010:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(170deg); -webkit-transform: rotate(170deg); -o-transform: rotate(170deg);}
+#q1_2010:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(153deg); -webkit-transform: rotate(153deg); -o-transform: rotate(153deg);}
+#q1_2010:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(131deg); -webkit-transform: rotate(131deg); -o-transform: rotate(131deg);}
+#q1_2010:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2010:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(42deg); -webkit-transform: rotate(42deg); -o-transform: rotate(42deg);}
+
+#q4_2009:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(171deg); -webkit-transform: rotate(171deg); -o-transform: rotate(171deg);}
+#q4_2009:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(154deg); -webkit-transform: rotate(154deg); -o-transform: rotate(154deg);}
+#q4_2009:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(139deg); -webkit-transform: rotate(139deg); -o-transform: rotate(139deg);}
+#q4_2009:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q4_2009:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(50deg); -webkit-transform: rotate(50deg); -o-transform: rotate(50deg);}
+
+#q3_2009:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(172deg); -webkit-transform: rotate(172deg); -o-transform: rotate(172deg);}
+#q3_2009:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(156deg); -webkit-transform: rotate(156deg); -o-transform: rotate(156deg);}
+#q3_2009:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(145deg); -webkit-transform: rotate(145deg); -o-transform: rotate(145deg);}
+#q3_2009:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q3_2009:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(61deg); -webkit-transform: rotate(61deg); -o-transform: rotate(61deg);}
+
+#q2_2009:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(172deg); -webkit-transform: rotate(172deg); -o-transform: rotate(172deg);}
+#q2_2009:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(158deg); -webkit-transform: rotate(158deg); -o-transform: rotate(158deg);}
+#q2_2009:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(149deg); -webkit-transform: rotate(149deg); -o-transform: rotate(149deg);}
+#q2_2009:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q2_2009:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(66deg); -webkit-transform: rotate(66deg); -o-transform: rotate(66deg);}
+
+#q1_2005:target #pie_chart ul :nth-child(1) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(2) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(3) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(4) p{ -moz-transform: rotate(176deg); -webkit-transform: rotate(176deg); -o-transform: rotate(176deg);}
+#q1_2005:target #pie_chart ul :nth-child(5) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(6) p{ -moz-transform: rotate(167deg); -webkit-transform: rotate(167deg); -o-transform: rotate(167deg);}
+#q1_2005:target #pie_chart ul :nth-child(7) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(8) p{ -moz-transform: rotate(167deg); -webkit-transform: rotate(167deg); -o-transform: rotate(167deg);}
+#q1_2005:target #pie_chart ul :nth-child(9) p{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg);}
+#q1_2005:target #pie_chart ul :nth-child(10) p{ -moz-transform: rotate(143deg); -webkit-transform: rotate(143deg); -o-transform: rotate(143deg);}
+
+#pyr_chart li { -webkit-transition: all .5s; }
+
+#pyr_chart ul :nth-child(1) {
+	background: #BC3603;
+	background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#de3d00), to(#BC3603));
+}
+ 
+#pyr_chart ul :nth-child(2) {
+	background: #D97904;
+	background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#fb8a00), to(#D97904));
+	height:292px;
+	
+}
+
+#pyr_chart ul :nth-child(3) {
+	background: #F2B705;
+	background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#ffc517), to(#F2B705));
+	height:277px;
+}
+
+#pyr_chart ul :nth-child(4) {
+	background: #86AD00;
+	background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#9bc800), to(#86AD00));
+	height:255px;
+}
+
+#pyr_chart ul :nth-child(5) { 
+	background: #0092B9;
+	background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#00addb), to(#0092B9));
+	height: 180px;
+}
+
+#pyr_chart ul :nth-child(6) { 
+	width: 0;
+	height: 0;
+	border-color: transparent #d8d6cb transparent #d8d6cb;
+	border-width: 0px 150px 300px 150px;
+ 	border-style:solid;
+}
+
+/*Pyramid chart data (height value) */
+#q1_2010:target #pyr_chart ul :nth-child(2) { height: 292px;}
+#q1_2010:target #pyr_chart ul :nth-child(3) { height: 277px;}
+#q1_2010:target #pyr_chart ul :nth-child(4) { height: 259px;}
+#q1_2010:target #pyr_chart ul :nth-child(5) { height: 185px;}
+
+#q4_2009:target #pyr_chart ul :nth-child(2) { height: 292px;}
+#q4_2009:target #pyr_chart ul :nth-child(3) { height: 279px;}
+#q4_2009:target #pyr_chart ul :nth-child(4) { height: 266px;}
+#q4_2009:target #pyr_chart ul :nth-child(5) { height: 192px;}
+
+#q3_2009:target #pyr_chart ul :nth-child(2) { height: 293px;}
+#q3_2009:target #pyr_chart ul :nth-child(3) { height: 280px;}
+#q3_2009:target #pyr_chart ul :nth-child(4) { height: 271px;}
+#q3_2009:target #pyr_chart ul :nth-child(5) { height: 201px;}
+
+#q2_2009:target #pyr_chart ul :nth-child(2) { height: 293px;}
+#q2_2009:target #pyr_chart ul :nth-child(3) { height: 282px;}
+#q2_2009:target #pyr_chart ul :nth-child(4) { height: 274px;}
+#q2_2009:target #pyr_chart ul :nth-child(5) { height: 205px;}
+
+#q1_2005:target #pyr_chart ul :nth-child(2) { height: 297px;}
+#q1_2005:target #pyr_chart ul :nth-child(3) { height: 290px;}
+#q1_2005:target #pyr_chart ul :nth-child(4) { height: 290px;}
+#q1_2005:target #pyr_chart ul :nth-child(5) { height: 269px;}
+/* Charts end */
+
+/* button panel start */
+#btn_panel {
+	position: relative;
+ 	margin-left:auto;
+	margin-right:auto;
+	width:	420px;
+	padding-top: 35px;
+}
+
+#btn_panel ul{
+	list-style-type: none;
+ 	display: inline;
+	padding: 0;
+ 	margin: 0;
+}
+	
+#btn_panel li{ 
+	float: left; 
+	padding: 5px;
+}
+
+#btn_panel span:first-child{ display: block; font-size: 22px; padding: 5px 0 0 0 }
+#btn_panel span:last-child{ display: block; font-size: 16px; padding: 7px 0 0 0;}
+
+#btn_panel li a{
+	display: block;
+	width: 60px;
+	height: 65px;
+	text-decoration: none;
+	text-align: center;
+	color: #565446;
+	background: #fcfcfc;
+	background-image: -moz-linear-gradient(100% 40% 270deg,#FFFFFF, #eaeaea, #f5f5f5 100%);
+	background-image: -webkit-gradient(linear, 0% 45%, 0% 69%, from(#FFFFFF), to(#EDEDED), color-stop(.4,#F7F7F7));
+	-moz-border-radius: 4px;
+ 	-webkit-border-radius: 4px;
+ 	border-radius: 4px;
+	-moz-box-shadow: #c0bca7 0px 1px 0px;
+ 	 -webkit-box-shadow: #c0bca7 0px 1px 0px;
+	box-shadow: #c0bca7 0px 1px 0px;
+	-webkit-transition: all .3s ease-out;
+  opacity:.5;
+}
+ 
+#btn_panel li:last-child a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+
+#q1_2005:target #btn_panel li:last-child a, #q2_2009:target #btn_panel li:last-child a, #q3_2009:target #btn_panel li:last-child a, #q4_2009:target #btn_panel li:last-child a, #q1_2010:target #btn_panel li:last-child a{color:#565446; -moz-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); opacity:.5;}
+#q1_2005:target #btn_panel li:nth-child(1) a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+#q2_2009:target #btn_panel li:nth-child(2) a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+#q3_2009:target #btn_panel li:nth-child(3) a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+#q4_2009:target #btn_panel li:nth-child(4) a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+#q1_2010:target #btn_panel li:nth-child(5) a{color:#c33702; -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); opacity:1;}
+/* button panel end */
+        </style>
+
+        <style>
+
+            :root {
+                --white: #FFF;
+                --primary: #645DFF;
+                --secondary: #2A2649;
+                --secondary-light: #777777;
+                --body-background: #efeefa;
+                --border: #E6E8F0;
+            }
+            
+            body {
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                padding: 16px;
+                background-color: var(--body-background);
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .tabs-container {
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                margin: 10px;
+                overflow: hidden;
+                border-radius: 16px;
+                background-color: var(--white);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;	
+            }
+            
+            .tab-content-wrapper {
+                overflow-y: hidden;
+                overflow-x: auto;
+                height: 540px;
+                min-width: 300px;
+                color: var(--secondary);
+                transition: all 0.45s ease-in-out;
+                padding: 12px 24px;
+            }
+            
+            .tab-content h2 {
+                color: var(--secondary);
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-top: 0px;
+                margin-bottom: 8px;
+            }
+            
+            .tab-content {
+                display: block;
+                font-size: 1rem;
+                padding: 24px 8px;
+                width: 400px;
+                height: 540px;
+                transition: all 0.45s ease-in-out;
+            }
+            
+            .tab-content img {
+                max-width: 300px;
+                width: 80%;
+                flex-grow: 1;
+            }
+            
+            .tabs {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+            }
+            
+            .tabs a {
+                position: relative;
+                display: flex;
+                text-decoration: none;
+                width: 100%;
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--secondary-light);
+                overflow: hidden;
+                text-align: left;
+                justify-content: start;
+                height: 90px;
+                padding: 0px 24px;
+                width: 350px;
+                align-items: center;
+                gap: 16px;
+            }
+            
+            .tabs a img {
+                height: 20px;
+                width: 20px;
+            }
+            
+            .tabs .active, .tabs a:hover {
+                font-weight: 700;
+                outline: none;
+                color: var(--primary);
+                border-right: 3px solid var(--primary);
+            }
+            
+            
+            .tabs a svg {
+                width: 36px;
+                height: 36px;
+                stroke: var(--secondary-light);
+            }
+            
+            .tabs .active svg, .tabs a:hover svg {
+                stroke: var(--primary);
+            }</style>
+    </head>
+    <body>
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li>
+                    <a id="tab1" title="Your Idea & Vision" href="#tab1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
+                            <path d="M9.7 17l4.6 0"></path>
+                        </svg>
+                        معاونت بهداشت
+                    </a>
+                </li>
+                <li>
+                    <a id="tab2" title="Product Specification" href="#tab2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-description" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                            <path d="M9 17h6"></path>
+                            <path d="M9 13h6"></path>
+                        </svg>
+معاونت درمان                    </a>
+                </li>
+                <li>
+                    <a id="tab3" title="UX/UI Design" href="#tab3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                            <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                            <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                            <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                        </svg>
+                        معاونت توسعه
+                    </a>
+                </li>
+                <li>
+                    <a id="tab4" title="Software Development" href="#tab4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-robot" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 7h10a2 2 0 0 1 2 2v1l1 1v3l-1 1v3a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-3l-1 -1v-3l1 -1v-1a2 2 0 0 1 2 -2z"></path>
+                            <path d="M10 16h4"></path>
+                            <circle cx="8.5" cy="11.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="15.5" cy="11.5" r=".5" fill="currentColor"></circle>
+                            <path d="M9 7l-1 -4"></path>
+                            <path d="M15 7l1 -4"></path>
+                         </svg>               
+                        معاونت آموزشی
+                    </a>
+                </li>
+                <li>
+                    <a id="tab5" title="Architecture & Engineering" href="#tab5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                         </svg>           
+                        معاونت غذا و دارو
+                    </a>
+                </li>
+                <li>
+                    <a id="tab6" title="MVP Release & Iterations" href="#tab6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path>
+                            <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
+                            <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                        </svg>
+                        معاونت تحقیقات و فناوری
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content-wrapper">
+                <section id="tab1-content" class="tab-content">
+                    <div id="wrapper">
+                        <div id="header">
+                           
+                        </div>
+                    
+                        <div id="q2_2010">
+                        <div id="q1_2010">
+                        <div id="q4_2009">
+                        <div id="q3_2009">
+                        <div id="q2_2009">
+                        <div id="q1_2005">
+                            <div id="labels">
+                                <ul>
+                                    <li><span></span>Internet Explorer</li>
+                                    <li><span></span>Mozilla Firefox</li>
+                                    <li><span></span>Google Chrome</li>
+                                    <li><span></span>Safari</li>
+                                    <li><span></span>Opera</li>
+                                </ul>
+                            </div>
+                            <div id="pie_ico">Pie &raquo;</div>
+                          
+                            <div id="percentage_wrapper">
+                                <div id="percentage">
+                                    <ul>
+                                        <li><p>60.14%</p><p>61.79%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
+                                        <li><p>24.98%</p><p>24.56%</p><p>24.39%</p><p>23.28%</p><p>23.22%</p><p>6.83%</p></li>
+                                        <li><p>7.14%</p><p>6.03%</p><p>4.27%</p><p>3.08%</p><p>2.35%</p><p>0%</p></li>
+                                        <li><p>5.10%</p><p>4.91%</p><p>4.64%</p><p>4.35%</p><p>3.89%</p><p>2.36%</p></li>
+                                        <li><p>2.66%</p><p>2.73%</p><p>2.52%</p><p>2.29%</p><p>2.27%</p><p>1.15%</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                                <div id="chart_holder" style="margin-left: 158px;">
+                                    <div id="pie_chart">
+                                        <ul>
+                                            <li id="c1_r"><p><span class="pie_left"></span></p></li> 	
+                                            <li id="c1_l"><p><span class="pie_right"></span></p></li>
+                                            <li id="c2_r"><p><span class="pie_left"></span></p></li> 	
+                                            <li id="c2_l"><p><span class="pie_right"></span></p></li>
+                                            <li id="c3_r"><p><span class="pie_left"></span></p></li> 	
+                                            <li id="c3_l"><p><span class="pie_right"></span></p></li>
+                                            <li id="c4_r"><p><span class="pie_left"></span></p></li> 	
+                                            <li id="c4_l"><p><span class="pie_right"></span></p></li>
+                                            <li id="c5_r"><p><span class="pie_left"></span></p></li> 	
+                                            <li id="c5_l"><p><span class="pie_right"></span></p></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                           
+                            <div id="btn_panel">
+                                <ul>
+                                    <li><a href="#q1_2005"><span>بهداشت محیط</span><span>1402</span></a></li>
+                                    <li><a href="#q2_2009"><span>درمانی</span><span>1402</span></a></li>
+                                    <li><a href="#q3_2009"><span>بهداشت</span><span>1402</span></a></li>
+                                    <li><a href="#q4_2009"><span>بیماری ها</span><span>1402</span></a></li>
+                                    <li><a href="#q1_2010"><span>Q1</span><span>1402</span></a></li>
+                                    <li><a href="#q2_2010"><span>Q2</span><span>1402</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!--q1_2005-->
+                        </div> <!--q2_2009-->
+                        </div> <!--q3_2009-->
+                        </div> <!--q4_2009-->
+                        </div> <!--q1_2010-->
+                        </div> <!--q2_2010-->
+                    </div>
+                </section>
+                <section id="tab2-content" class="tab-content">
+                    <h2>Product Specification</h2>
+                    <p>
+                        In this phase, we will remove vagueness and draft our minimum viable product in as much detail as we can. We will also evaluate the current capabilities of AI and how we can maximise the power of your data. This is the key phase and foundation for the future success of your product.
+                    </p>
+                    <img src="assets/product.png" alt="product"> 
+                </section> 
+                <section id="tab3-content" class="tab-content">
+                    <h2>UX/UI Design</h2>
+                    <p>
+                        We will start to design UX & UI for already approved features. Our design process includes user research and accessibility as well as usability testing. The end goal of this phase is a smooth design and an easy-to-use product. We continually iterate over our design features.
+                    </p>
+                    <img src="assets/ui.png" alt="ui"> 
+
+                </section>
+                <section id="tab4-content" class="tab-content">
+                    <h2>AI & Machine Learning</h2>
+                    <p>
+                        The application of AI & machine learning is the key focus for every modern product. So many new market opportunities emerge every day.
+                    </p>
+                    <img src="assets/brain.png" alt="brain"> 
+
+                </section>
+                <section id="tab5-content" class="tab-content">
+                    <h2>Architecture & Engineering</h2>
+                    <p>
+                        Software architecture and engineering includes designing the database, backend, and frontend engineering, as well as preparing the infrastructure and automating your business processes.
+                    </p>
+                    <img src="assets/engineer.png" alt="engineer"> 
+                </section>
+                <section id="tab6-content" class="tab-content">
+                    <h2>MVP Release & Iterations</h2>
+                    <p>
+                        Now the product is finalized and ready for users. The product will continue to be extended in an agile way based on customers’ feedback.
+                    </p>
+                    <img src="assets/release.png" alt="release"> 
+                </section>
+            </div>
+        </div>
+        <script> 
+            const allLinks = document.querySelectorAll(".tabs a");
+            const allTabs = document.querySelectorAll(".tab-content")
+            const tabContentWrapper = document.querySelector(".tab-content-wrapper");
+            
+            const shiftTabs = (linkId) => {
+              allTabs.forEach((tab, i) => {
+                  
+                if (tab.id.includes(linkId)) {
+                  allTabs.forEach((tabItem) => { 
+                    tabItem.style = `transform: translateY(-${i*540}px);`;
+                  });
+                }
+              });
+            }
+            
+            allLinks.forEach((elem) => {
+              elem.addEventListener('click', function() {
+                const linkId = elem.id;
+                const hrefLinkClick = elem.href;
+            
+                allLinks.forEach((link, i) => {
+                  if (link.href == hrefLinkClick){
+                    link.classList.add("active");
+                  } else {
+                    link.classList.remove('active');
+                  }
+                });
+            
+                shiftTabs(linkId);
+              });
+            });
+            
+            //? handle proper selection for initial load
+            const currentHash = window.location.hash;
+            
+            let activeLink = document.querySelector(`.tabs a`);
+            
+            if (currentHash) {
+              const visibleHash = document.getElementById(
+                `${currentHash.replace('#', '')}`
+              );
+            
+              if (visibleHash) {
+                activeLink = visibleHash;
+              }
+            }
+            
+            activeLink.classList.toggle('active');
+            
+            shiftTabs(activeLink.id);</script>
+    </body>
+</html>
+    

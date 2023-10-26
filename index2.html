@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="css/style7.css">
+    <link rel="stylesheet" href="css/style8.css">
+    <link rel="stylesheet" href="css/style9.css">
+    <title>دانشگاه علوم پزشکی نیشابور</title>
+    <meta name="description" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+
+    <!-- Main CSS -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- Bootstrap rtl CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-rtl.min.css"> -->
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Owl Caousel CSS -->
+    <link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel/owl.theme.default.min.css">
+    <!-- Main Menu CSS -->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <!-- Magnific CSS -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!-- Switch Style CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For IE -->
+    <link rel="stylesheet" type="text/css" href="css/ie-only.css">
+    <!-- Modernizr Js -->
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <style>
+        label {
+            cursor: pointer;
+        }
+
+        label:focus {
+            outline: none;
+        }
+
+        .menu1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #3b3996;
+            width: 240px;
+            height: 100%;
+            transform: translate3d(-240px, 0, 0);
+            transition: transform 0.35s;
+        }
+
+        .menu1 label.menu-toggle {
+            position: absolute;
+            right: -60px;
+            width: 60px;
+            height: 60px;
+            line-height: 0px;
+            display: block;
+            padding: 0;
+            text-indent: -9999px;
+            background: #c51414 url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+        }
+
+        .menu1 ul li>label {
+            background: #14c57b url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
+        }
+
+        .menu1 ul li a,
+        .menu ul li label {
+            display: block;
+            text-align: center;
+            padding: 0 20px;
+            line-height: 60px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu1 ul li a:hover,
+        .menu ul li label:hover {
+            color: #666;
+        }
+
+        /* hide inputs */
+        .menu-checkbox {
+            display: none;
+        }
+
+        /* hide navigation icon for sublabels */
+        .menu1 .menu label.menu-toggle {
+            background: yellow;
+        }
+
+        /* fade in checked menu */
+        .menu-checkbox:checked+.menu1 {
+            transform: translate3d(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="checkbox" id="menu1" name="menu" class="menu-checkbox">
+    <div class="menu1">
+      <label class="menu-toggle" for="menu1"><span>Toggle</span></label>
+      <ul>
+        <li>
+          <a href="#">Menu-1</a>
+        </li>
+        <li>
+          <a href="#">Menu-2</a>
+        </li>
+        <li>
+          <label for="menu-3">Menu-3</label>
+          <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+          <div class="menu1">
+            <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+            <ul>
+              <li>
+                <a href="#">Menu-3-1</a>
+              </li>
+              <li>
+                <label for="menu-3-2">Menu-3-2</label>
+                <input type="checkbox" id="menu-3-2" name="menu-3-2" class="menu-checkbox">
+                <div class="menu1">
+                  <label class="menu-toggle" for="menu-3-2"><span>Toggle</span></label>
+                  <ul>
+                    <li>
+                      <a href="#">Menu-3-2-1</a>
+                    </li>
+                    <li>
+                      <a href="#">Menu-3-2-2</a>
+                    </li>
+                    <li>
+                      <label for="menu-3-2-3">Menu-3-2-3</label>
+                      <input type="checkbox" id="menu-3-2-3" name="menu-3-2-3" class="menu-checkbox">
+                      <div class="menu1">
+                        <label class="menu-toggle" for="menu-3-2-3"><span>Toggle</span></label>
+                        <ul>
+                          <li>
+                            <a href="#">Menu-3-2-3-1</a>
+                          </li>
+                          <li>
+                            <a href="#">Menu-3-2-3-2</a>
+                          </li>
+                          <li>
+                            <a href="#">Menu-3-2-3-3</a>
+                          </li>
+                          <li>
+                            <a href="#">Menu-3-2-3-4</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Menu-3-2-4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Menu-3-3</a>
+              </li>
+              <li>
+                <a href="#">Menu-3-4</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <label for="menu-4">Menu-4</label>
+          <input type="checkbox" id="menu-4" name="menu-4" class="menu-checkbox">
+          <div class="menu1">
+            <label class="menu-toggle" for="menu-4"><span>Toggle</span></label>
+            <ul>
+              <li>
+                <a href="#">Menu-4-1</a>
+              </li>
+              <li>
+                <a href="#">Menu-4-2</a>
+              </li>
+              <li>
+                <a href="#">Menu-4-3</a>
+              </li>
+              <li>
+                <a href="#">Menu-4-4</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <label for="menu-5">Menu-5</label>
+          <input type="checkbox" id="menu-5" name="menu-5" class="menu-checkbox">
+          <div class="menu1">
+            <label class="menu-toggle" for="menu-5"><span>Toggle</span></label>
+            <ul>
+              <li>
+                <a href="#">Menu-5-1</a>
+              </li>
+              <li>
+                <a href="#">Menu-5-2</a>
+              </li>
+              <li>
+                <a href="#">Menu-5-3</a>
+              </li>
+              <li>
+                <a href="#">Menu-5-4</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Menu-6</a>
+        </li>
+      </ul>
+    </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- start menu -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="nav">
+                        <nav>
+
+                            <ul class="menu menu-bar">
+                                <li>
+                                    <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                        aria-haspopup="true">حوزه ریاست دانشگاه
+                                    </a>
+                                    <ul class="mega-menu mega-menu--multiLevel">
+                                        <li>
+                                            <a href="javascript:void(0);" class="menu-link mega-menu-link"
+                                                aria-haspopup="true">1.1 Flyout
+                                                link</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.1.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="menu-link menu-list-link"
+                                                        aria-haspopup="true">1.1.2 Flyout link</a>
+                                                    <ul class="menu menu-list">
+                                                        <li>
+                                                            <a href="/page" class="menu-link menu-list-link">1.1.2.1
+                                                                Page link</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/page" class="menu-link menu-list-link">1.1.2.2
+                                                                Page link</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.1.3 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="menu-link mega-menu-link"
+                                                aria-haspopup="true">1.2 Flyout
+                                                link</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.2.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.2.2 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="menu-link mega-menu-link"
+                                                aria-haspopup="true">1.3 Flyout
+                                                link</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.3.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">1.3.2 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/page" class="menu-link mega-menu-link">1.4 Page link</a>
+                                        </li>
+                                        <li class="mobile-menu-back-item">
+                                            <a href="javascript:void(0);"
+                                                class="menu-link mobile-menu-back-link">Back</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                        aria-haspopup="true">2. Flat mega menu (3
+                                        cols)</a>
+                                    <ul class="mega-menu mega-menu--flat">
+                                        <li>
+                                            <a href="/page" class="menu-link mega-menu-link mega-menu-header">2.1 Page
+                                                link header</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.1.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.1.2 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.1.3 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/page" class="menu-link mega-menu-link mega-menu-header">2.2 Page
+                                                link header</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.2.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.2.2 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.2.3 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/page" class="menu-link mega-menu-link mega-menu-header">2.3 Page
+                                                link header</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.2.1 Page link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">2.2.2 Page link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile-menu-back-item">
+                                            <a href="javascript:void(0);"
+                                                class="menu-link mobile-menu-back-link">Back</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                        aria-haspopup="true">3. Flat mega menu (2
+                                        cols)</a>
+                                    <ul class="mega-menu mega-menu--flat">
+                                        <li>
+                                            <a href="#" class="menu-link mega-menu-link mega-menu-header">3.1 Page link
+                                                header</a>
+                                            <ul class="menu menu-list">
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">
+                                                        3.1.1 Page link<br />
+                                                        <small>Short decription of link</small>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">
+                                                        3.1.2 Page link<br />
+                                                        <small>Short decription of link</small>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/page" class="menu-link menu-list-link">
+                                                        3.1.2 Page link<br />
+                                                        <small>Short decription of link</small>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-content">
+                                            <p class="mega-menu-header">3.2 Page link header</p>
+                                            <p>This is just static content. You can add anything here. Images, text,
+                                                buttons, your grandma's
+                                                secrect
+                                                recipe.</p>
+                                        </li>
+                                        <li class="mobile-menu-back-item">
+                                            <a href="javascript:void(0);"
+                                                class="menu-link mobile-menu-back-link">Back</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/page" class="menu-link menu-bar-link">Static link</a>
+                                </li>
+
+                                <li class="mobile-menu-header">
+                                    <a href="/home" class="">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu -->
+    <!-- Start Slider -->
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section id="section-1">
+                        <div class="content-slider">
+                            <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+                            <input type="radio" id="banner2" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner3" class="sec-1-input" name="banner">
+                            <input type="radio" id="banner4" class="sec-1-input" name="banner">
+                            <div class="slider">
+                                <div id="top-banner-1" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                        <!-- <h2>Creative Template</h2>
+                                        <h1>Welcome<br>to MoGo</h1> -->
+                                        <img src="" alt="">
+
+
+                                    </div>
+                                </div>
+                                <div id="top-banner-2" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                        <h2>What We Do</h2>
+                                        <h1>Great<br>MoGo</h1>
+
+
+                                    </div>
+                                </div>
+                                <div id="top-banner-3" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                        <h2>Here We Are</h2>
+                                        <h1>We Are<br>MoGo</h1>
+
+
+                                    </div>
+                                </div>
+                                <div id="top-banner-4" class="banner">
+                                    <div class="banner-inner-wrapper">
+                                        <h2>Our Contacts</h2>
+                                        <h1>Welcome<br>to MoGo</h1>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <nav>
+
+
+                                <div class="container"><a class="icon" href="#"><i class="fas fa-phone"></i></a><a
+                                        class="icon" href="#"><i class="fas fa-images"></i></a><a class="icon"
+                                        href="#"><i class="fas fa-envelope-open"></i></a><a class="icon" href="#"><i
+                                            class="fas fa-comment"></i></a><a class="icon" href="#"><i
+                                            class="fas fa-music"></i></a>
+                                    <a class="icon" href="#"><i class="fas fa-phone"></i>
+                                        <h1>وبدا</h1>
+                                    </a>
+                                    <a class="icon" href="#"><i class="fas fa-phone"></i>
+                                        <h1>وبدا</h1>
+                                    </a>
+                                    <a class="icon" href="#"><i class="fas fa-phone"></i>
+                                        <h1>وبدا</h1>
+                                    </a>
+                                    <a class="icon" href="#"><i class="fas fa-phone"></i>
+                                        <h1>وبدا</h1>
+                                    </a>
+
+                                </div>
+
+                            </nav>
+
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- End Slider -->
+
+    <!-- Header Area End Here -->
+    <!-- News Feed Area Start Here -->
+    <section class="bg-accent">
+        <div class="container-fluid">
+            <div class="row no-gutters d-flex align-items-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="topic-box mt-10 mb-10">اخبار داغ</div>
+                </div>
+                <div class="col-lg-10 col-md-9 col-sm-8 col-6">
+                    <div class="feeding-text-dark">
+                        <ol id="sample" class="ticker">
+                            <li>
+                                <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                    است و برای</a>
+                            </li>
+                            <li>
+                                <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و</a>
+                            </li>
+                            <li>
+                                <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News Feed Area End Here -->
+    <!-- News Slider Area Start Here -->
+    <section class="bg-accent section-space-bottom-less4">
+        <div class="container-fluid">
+            <div class="row tab-space2">
+                <div class="col-md-8 col-sm-12 mb-4">
+                    <div class="img-overlay-70 img-scale-animate">
+                        <img src="img/news/news73.jpg" alt="news" class="img-fluid width-100 banner_image">
+                        <div class="mask-content-lg banner_content">
+                            <div class="topic-box-sm color-cinnabar mb-20">سیاست</div>
+                            <div class="post-date-light">
+                                <ul>
+                                    <li>
+                                        <span>توسط</span>
+                                        <a href="single-news-1.html">وحید</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>22 اردیبهشت 1398
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1 class="title-medium-light">
+                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                    با استفاده از طراحان</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+
+                    <div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">اطلاعیه</button>
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">آخرین اخبار</button>
+                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">اخبار وبدا</button>
+                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"> پاسخ به رسانه</button>
+                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false"> جوابیه</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab" tabindex="0">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul id="demo3">
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                    <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        از صنعت چاپ و با استفاده از طراحان گرافیک است<a href="#"> بیشتر
+                                                            بخوانید ... </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer"></div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab" tabindex="1">
+                                    <div class="panel panel-default">
+
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <ul class="demo2">
+                                                        <li class="news-item">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                            نامفهوم از صنعت چاپ و طراحان گرافیک است<a href="#"> بیشتر
+                                                                بخوانید ... </a></li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab" tabindex="0">
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-disabled" role="tabpanel"
+                                    aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- News Slider Area End Here -->
+    <!-- Top Story Area Start Here -->
+    <section class="bg-accent section-space-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="ne-isotope">
+                        <div class="topic-border color-cinnabar mb-30">
+                            <div class="topic-box-lg color-cinnabar"> رویداد</div>
+                            <div class="isotope-classes-tab isotop-btn">
+                                <a href="#" data-filter=".politics" class="current">اخبار دانشگاه</a>
+                                <a href="#" data-filter=".fashion"> بهداشت </a>
+                                <a href="#" data-filter=".health"> درمان</a>
+                                <a href="#" data-filter=".travel">حوادث</a>
+                                <a href="#" data-filter=".gadget">وبدا</a>
+                            </div>
+
+                        </div>
+                        <div class="featuredContainer">
+                            <div class="row politics">
+                                <div class="col-xl-4 col-lg-5 col-md-12 mb-30">
+                                    <div class="img-overlay-70 img-scale-animate">
+                                        <a href="single-news-1.html">
+                                            <img src="img/news/news76.jpg" alt="news" class="img-fluid width-100">
+                                        </a>
+                                        <div class="mask-content-lg">
+                                            <div class="topic-box-sm color-apple mb-20">مد و زیبایی</div>
+                                            <div class="post-date-light">
+                                                <ul>
+                                                    <li>
+                                                        <span>توسط</span>
+                                                        <a href="single-news-1.html">وحید</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>22 اردیبهشت 1398
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="title-medium-light size-lg">
+                                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news77.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news78.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news79.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>24 فروردین 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news80.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>22 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news81.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>29 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news82.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>6 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fashion">
+                                <div class="col-xl-4 col-lg-5 col-md-12 mb-30">
+                                    <div class="img-overlay-70 img-scale-animate">
+                                        <a href="single-news-1.html">
+                                            <img src="img/news/news76.jpg" alt="news" class="img-fluid width-100">
+                                        </a>
+                                        <div class="mask-content-lg">
+                                            <div class="topic-box-sm color-apple mb-20">مد و زیبایی</div>
+                                            <div class="post-date-light">
+                                                <ul>
+                                                    <li>
+                                                        <span>توسط</span>
+                                                        <a href="single-news-1.html">وحید</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>22 اردیبهشت 1398
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="title-medium-light size-lg">
+                                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news77.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news78.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news79.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>24 فروردین 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news80.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>22 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news81.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>29 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news82.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>6 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row health">
+                                <div class="col-xl-4 col-lg-5 col-md-12 mb-30">
+                                    <div class="img-overlay-70 img-scale-animate">
+                                        <a href="single-news-1.html">
+                                            <img src="img/news/news76.jpg" alt="news" class="img-fluid width-100">
+                                        </a>
+                                        <div class="mask-content-lg">
+                                            <div class="topic-box-sm color-apple mb-20">مد و زیبایی</div>
+                                            <div class="post-date-light">
+                                                <ul>
+                                                    <li>
+                                                        <span>توسط</span>
+                                                        <a href="single-news-1.html">وحید</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>22 اردیبهشت 1398
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="title-medium-light size-lg">
+                                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news77.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news78.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news79.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>24 فروردین 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news80.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>22 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news81.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>29 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news82.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>6 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row travel">
+                                <div class="col-xl-4 col-lg-5 col-md-12 mb-30">
+                                    <div class="img-overlay-70 img-scale-animate">
+                                        <a href="single-news-1.html">
+                                            <img src="img/news/news76.jpg" alt="news" class="img-fluid width-100">
+                                        </a>
+                                        <div class="mask-content-lg">
+                                            <div class="topic-box-sm color-apple mb-20">مد و زیبایی</div>
+                                            <div class="post-date-light">
+                                                <ul>
+                                                    <li>
+                                                        <span>توسط</span>
+                                                        <a href="single-news-1.html">وحید</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>22 اردیبهشت 1398
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="title-medium-light size-lg">
+                                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news77.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news78.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news79.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>24 فروردین 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news80.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>22 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news81.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>29 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news82.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>6 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gadget">
+                                <div class="col-xl-4 col-lg-5 col-md-12 mb-30">
+                                    <div class="img-overlay-70 img-scale-animate">
+                                        <a href="single-news-1.html">
+                                            <img src="img/news/news76.jpg" alt="news" class="img-fluid width-100">
+                                        </a>
+                                        <div class="mask-content-lg">
+                                            <div class="topic-box-sm color-apple mb-20">مد و زیبایی</div>
+                                            <div class="post-date-light">
+                                                <ul>
+                                                    <li>
+                                                        <span>توسط</span>
+                                                        <a href="single-news-1.html">وحید</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>22 اردیبهشت 1398
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="title-medium-light size-lg">
+                                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news77.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news78.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>14 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news79.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>24 فروردین 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news80.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>22 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news81.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>29 اردیبهشت 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید
+                                                            سادگی نامفهوم</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="media bg-body item-shadow-gray mb-30">
+                                                <a class="img-opacity-hover" href="single-news-1.html">
+                                                    <img src="img/news/news82.jpg" alt="news" class="img-fluid">
+                                                </a>
+                                                <div class="media-body media-padding10">
+                                                    <div class="post-date-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                </span>6 خرداد 1398
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 class="title-medium-dark mb-none">
+                                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Video Area Start Here -->
+        <section class="bg-secondary-body section-space-less30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topic-border color-cinnabar mb-30">
+                            <div class="topic-box-lg color-cinnabar"> فیلم</div>
+                            <div class="topic-box-lg color-cinnabar"> تصاویر</div>
+                            <div class="topic-box-lg color-cinnabar"> پادکست</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="img-overlay-90 mb-30">
+                                    <div class="text-center">
+                                        <a class="play-btn popup-youtube"
+                                            href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
+                                            <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <img src="img/news/news105.jpg" alt="news" class="img-fluid width-100">
+                                    <div class="mask-content-lg hidden-mb">
+                                        <div class="topic-box-sm color-white mb-20">تکنولوژی</div>
+                                        <div class="post-date-light">
+                                            <ul>
+                                                <li>
+                                                    <span>توسط</span>
+                                                    <a href="single-news-1.html">جان</a>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>27 اردیبهشت 1398
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="title-medium-light size-lg">
+                                            <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                از صنعت چاپ و با استفاده</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="media mb-30">
+                                    <a class="img-opacity-hover width26-lg" href="single-news-1.html">
+                                        <img src="img/news/news106.jpg" alt="news" class="img-fluid">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="topic-box-sm color-white mb-20">نرم افزار</div>
+                                        <h3 class="title-medium-light mb-none">
+                                            <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                از صنعت چاپ و با استفاده</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media mb-30">
+                                    <a class="img-opacity-hover width26-lg" href="single-news-1.html">
+                                        <img src="img/news/news107.jpg" alt="news" class="img-fluid">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="topic-box-sm color-white mb-20">گجت ها</div>
+                                        <h3 class="title-medium-light mb-none">
+                                            <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                از صنعت چاپ و با استفاده</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media mb-30">
+                                    <a class="img-opacity-hover width26-lg" href="single-news-1.html">
+                                        <img src="img/news/news108.jpg" alt="news" class="img-fluid">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="topic-box-sm color-white mb-20">اندروید</div>
+                                        <h3 class="title-medium-light mb-none">
+                                            <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                از صنعت چاپ و با استفاده</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="tabs justify-content-center">
+                            <input type="radio" name="tabs" id="tabone" checked="checked">
+                            <label for="tabone">Tab One</label>
+                            <div class="tab">
+
+                                <body class="dark">
+                                    <div class="cards ">
+
+                                        <div class="card active ">
+                                            <div class="shadow"></div>
+                                            <div class="label">
+                                                <div class="icon" style="--color: green">
+                                                    <ion-icon name="sunny"></ion-icon>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="title">Spring</div>
+                                                    <div>Nature Looks Attractive</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card"
+                                            style="--bg: url(https://www.nums.ac.ir/components/com_rsmediagallery/assets/gallery/original/99683949886bba6f3fdb1846bfe316c5.jpeg)">
+                                            <div class="shadow"></div>
+                                            <div class="label">
+                                                <div class="icon" style="--color: blue">
+                                                    <ion-icon name="sparkles"></ion-icon>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="title">Summer</div>
+                                                    <div>Summer is a State of Mind</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card"
+                                            style="--bg: url(https://www.nums.ac.ir/components/com_rsmediagallery/assets/gallery/original/99683949886bba6f3fdb1846bfe316c5.jpeg)">
+                                            <div class="shadow"></div>
+                                            <div class="label">
+                                                <div class="icon" style="--color: orange">
+                                                    <ion-icon name="thunderstorm"></ion-icon>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="title">Autumn</div>
+                                                    <div>Life Starts All Over Again</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card"
+                                            style="--bg: url(https://www.nums.ac.ir/components/com_rsmediagallery/assets/gallery/original/99683949886bba6f3fdb1846bfe316c5.jpeg)">
+
+                                            <div class="shadow">
+
+                                            </div>
+                                            <div class="label">
+
+                                                <div class="icon" style="--color: black">
+                                                    <ion-icon name="snow"></ion-icon>
+                                                </div>
+
+                                                <div class="info">
+
+                                                    <div class="title">
+                                                        Winter</div>
+                                                    <div>Not a Season, It's Celebration</div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                            </div>
+
+                            <input type="radio" name="tabs" id="tabtwo">
+                            <label for="tabtwo">Tab Two</label>
+                            <div class="tab">
+                                <h1>Tab Two Content</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+
+                            <input type="radio" name="tabs" id="tabthree">
+                            <label for="tabthree">Tab Three</label>
+                            <div class="tab">
+                                <h1>Tab Three Content</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <main>
+                        <div>
+                            <span>discover</span>
+                            <h1>aquatic animals</h1>
+                            <hr>
+                            <p>Beauty and mystery are hidden under the sea. Explore with our application to know about
+                                Aquatic Animals.</p>
+                            <a href="#">download app</a>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide--one">
+                                    <div>
+                                        <h2>Jellyfish</h2>
+                                        <p>Jellyfish and sea jellies are the informal common names given to the
+                                            medusa-phase of certain gelatinous members of the subphylum Medusozoa, a
+                                            major part of the phylum Cnidaria.</p>
+                                        <a href="https://en.wikipedia.org/wiki/Jellyfish" target="_blank">explore</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide--two">
+                                    <div>
+                                        <h2>Seahorse</h2>
+                                        <p>
+                                            Seahorses are mainly found in shallow tropical and temperate salt water
+                                            throughout the world. They live in sheltered areas such as seagrass beds,
+                                            estuaries, coral reefs, and mangroves. Four species are found in Pacific
+                                            waters from North America to South America.
+                                        </p>
+                                        <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank">explore</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide--three">
+
+                                    <div>
+                                        <h2>octopus</h2>
+                                        <p>
+                                            Octopuses inhabit various regions of the ocean, including coral reefs,
+                                            pelagic waters, and the seabed; some live in the intertidal zone and others
+                                            at abyssal depths. Most species grow quickly, mature early, and are
+                                            short-lived.
+                                        </p>
+                                        <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank">explore</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide--four">
+
+                                    <div>
+                                        <h2>Shark</h2>
+                                        <p>
+                                            Sharks are a group of elasmobranch fish characterized by a cartilaginous
+                                            skeleton, five to seven gill slits on the sides of the head, and pectoral
+                                            fins that are not fused to the head.
+                                        </p>
+                                        <a href="https://en.wikipedia.org/wiki/Shark" target="_blank">explore</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide--five">
+
+                                    <div>
+                                        <h2>Dolphin</h2>
+                                        <p>
+                                            Dolphins are widespread. Most species prefer the warm waters of the tropic
+                                            zones, but some, such as the right whale dolphin, prefer colder climates.
+                                            Dolphins feed largely on fish and squid, but a few, such as the orca, feed
+                                            on large mammals such as seals.
+                                        </p>
+                                        <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank">explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt=""
+                            class="bg">
+                        <img src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt=""
+                            class="bg2">
+                    </main>
+                </div>
+            </div>
+        </div>
+        <section>
+
+        </section>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-12">
+                    <section class="game-section">
+                        <h2 class="line-title"> روسای پیشین دانشگاه</h2>
+                        <div class="owl-carousel custom-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="item active"
+                                        style="background-image: url(https://www.nums.ac.ir/images/1400/12/21/1.jpg);">
+                                        <div class="item-desc">
+                                            <h3>دکتر مجید درودی</h3>
+                                            <p>از سال 1401 </p>
+                                        </div>
+                                    </div>
+                                    <div class="item" style="background-image: url(1.jpg);">
+                                        <div class="item-desc">
+                                            <h3>The Witcher 3</h3>
+                                            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is
+                                                a sequel to Defense
+                                                of the Ancients, which was a community-created mod for Blizzard
+                                                Entertainment's Warcraft III.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(data:image/jpeg;base64,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);">
+                                        <div class="item-desc">
+                                            <h3>RDR 2</h3>
+                                            <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel
+                                                to Defense of the
+                                                Ancients, which was a community-created mod for Blizzard Entertainment's
+                                                Warcraft III.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+
+    <section>
+        <footer class="footer-section">
+            <div class="container-fluid">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>9876543210 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                            class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                        incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">services</a></li>
+                                    <li><a href="#">portfolio</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class=" col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2018, All Right Reserved <a
+                                        href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="./script.js"></script>
+    <script src="js/al.js" type="text/javascript"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- jquery-->
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js" type="text/javascript"></script>
+    <!-- Popper js -->
+    <script src="js/popper.js" type="text/javascript"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- WOW JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="vendor/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+    <!-- Meanmenu Js -->
+    <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
+    <!-- Srollup js -->
+    <script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <!-- jquery.counterup js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- Isotope js -->
+    <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Ticker Js -->
+    <script src="js/ticker.js" type="text/javascript"></script>
+    <!-- Custom Js -->
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/bf3a896dc5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652.01 434.67">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #fefefe;
+            }
+
+            .cls-2 {
+                fill: #1592ba;
+            }
+
+            .cls-3 {
+                fill: #1591ba;
+            }
+
+            .cls-4 {
+                fill: #1690b8;
+            }
+
+            .cls-5 {
+                fill: #1691ba;
+            }
+
+            .cls-6 {
+                fill: #435a64;
+            }
+
+            .cls-7 {
+                fill: #324148;
+            }
+
+            .cls-8 {
+                fill: #233740;
+            }
+
+            .cls-9 {
+                fill: #1b2429;
+            }
+
+            .cls-10 {
+                fill: #121e24;
+            }
+
+            .cls-11 {
+                fill: #27434e;
+            }
+
+            .cls-12 {
+                fill: #1691b9;
+            }
+
+            .cls-13 {
+                fill: #1d2c34;
+            }
+
+            .cls-14 {
+                fill: #1a333e;
+            }
+
+            .cls-15 {
+                fill: #174253;
+            }
+
+            .cls-16 {
+                fill: #d7d7d7;
+            }
+        </style>
+    </defs>
+    <path class="cls-1"
+        d="M443.05,638.57q-160.79,0-321.56.08c-3.38,0-4.49-.33-4.49-4.21q.21-213.2,0-426.39c0-3.41.9-4,4.12-4q321.83.14,643.66,0c3.93,0,4.18,1.19,4.18,4.51q-.13,212.94,0,425.86c0,3.72-.84,4.31-4.4,4.31Q603.84,638.49,443.05,638.57Zm-42-296.42c-.1-.61-.4-1-1.08-.84l-1.21-1.23-1.22-2c.39-3.11-3.31-2.4-4.11-4.4.16-1.36.61-2.82-1.2-3.51l-.33-.37a1.73,1.73,0,0,0-1.45-1.45l0-.05c-.11-1.59.33-3.48-2.08-3.82-1.79-2-4.74-.79-6.64-2.48a2.4,2.4,0,0,0-1.94-2.15c-2.91-3.07-6.63-4-10.69-4l-2-.07-4.29,1.09c-.66.06-2.05-1.12-1.81.22.34,1.83-.8,3.16-.76,4.78-1,.05-1.9.19-2.38,1.21a1.23,1.23,0,0,0-.39,1l-.08.08c-1,.57-2.73-1.4-3.23.92-1.8,1.89-5.49,1-6.35,4.28-1.8,2.06-2.12,9.93.26,11.48,4.7,3.05,3.36,6.83,2.45,10.81.18,3.23,2.17,3.71,4.84,3.17l3.19,1.05c1.93.9-.18,1.33-.23,2-3.63,1.34-2.78,5.5-4.9,7.79l-.26,2.77c-3.75,1.29-2.67,3.48-1.07,5.76v0c-.42,1.76.7,2.55,2,3.2,1.82,2.45-2.3,1.49-1.82,3.17.66,2.44-1.63,4.92.32,7.41s.77,4-1.72,5.22c-3.81,1.92-7.46,4.16-11.28,6.09-2.34,1.19-3.52,3.34-2.83,5.38.64,1.88,2.55,2.77,5.32,2.77,2.15,0,7.43-1.05,6.52,4.64l0,0-.71.94c-2.66,1-5.25,2.51-5.18,5.52.09,3.23,3.48,3.27,5.75,4.23a6.11,6.11,0,0,0,1.51.23l.33.1.08.28-.19-.28c5.18.84,6.54,4,6.31,9-.35,7.3,3.13,12.78,9.41,16.49-2.07,2.43-2.34,5.55-3.21,8.44h0c-1.39-.05-2.32.42-2.22,2V459c-2.14,1.16-2.47,3.35-3.08,5.38h0l-.89,1.06a.79.79,0,0,0-.34.76c-2.2,0-1.9,1.56-1.89,2.94,0,8.33,3.5,16.18,3.34,24.56,0,1.48,1.66,1.55,2.88,1.72a1,1,0,0,0,.19.86,49.27,49.27,0,0,1-1.86,17.33c-.69,2.35-.19,3.85,2.61,3.51,1.86-.22,3.84.6,5.6-.59a4,4,0,0,0,4.17,1.08c2.1.87,3.94,3.1,6.55,1.21l.34,0,.32-.1c1.63,2.74,4.23,1.93,6.65,1.82a6.86,6.86,0,0,0,1,.23c1.35.91,2.28,2.69,4.35,2.13l.49-.06.49,0c.16.84.46,1.54,1.49,1.56s1.25-.76,1.36-1.58l1.44-.24,7.44,1.27,1.12-.13c4.79-1.25,9.46-1.29,13.87,1.36l2.86,2.82c-1.32,2.61.62,2.82,2.35,3.19l3.33,3.36c0,1.24,1.1,1.12,1.84,1.45.18.67.56,1,1.24.58,2.66,1.75,3.69-.91,5.31-2l1.69.1c1.55,1.55,1.85.22,2.51-.94,3.22-5.68,2.56-12.24,4.29-18.25l6.37-3.46a4,4,0,0,0,4.07-1.09c6.17-.06,12.4,1.35,18.47-.82,3.07.48,4.48-1.09,4.91-3.93.6-3.91,1.65-7.78,1.2-11.81,2.07-1.64,3.25,2.86,5.38.78a18.24,18.24,0,0,1,7.21,3.64c3.78,3.07,8.68,2.21,13.06.94,2.4-.7,3.91-2.34,2.17-5.52-1.91-3.49-3.08-7.39-4.48-11.15-1.11-3-3.2-6-1-9.24,4.08-5.93,8.81-11.33,15.35-14.57,1.66-.83,3.81-1.36,3.57-3.1-.31-2.2.84-4.46-1.68-6.8-5.36-5-11.36-9.1-17-13.61-4.87-3.88-9.94-8.44-17.13-7.53-.64-3-4.86-1.86-5.6-4.77.34-3.24-3.45-3.58-4.24-6a2.21,2.21,0,0,0-1.85-1.67l-1.11-.29c-1.34-5.74-5.66-6.39-10.5-6.12-2.4-1.62-4.95-3.05-7.36-4.57-2.89-1.83-5.65-5.21-9.92-4.15l-1.16-1.08c3.72-5.14-1.7-5.11-3.88-6-2.84-1.21-6.25-1.13-7.87-4.45-.18-4.42,1.17-8.94-.74-13.27-2-2.53-5.26-1.42-7.62-2.76-3.62-2.06-8.44-.84-11.53-4.27,0-1.24.08-2.47.13-3.71a2.37,2.37,0,0,0,.9.24c.26,0,.49-.31.73-.48l-1.2.39a2.67,2.67,0,0,0,1.36-2.74c.38-5.34-2.14-8.11-7.46-8.38-1,.13-.9-2-2.26-1l-2.81-.26,0,0a3.5,3.5,0,0,0-2.09-3.26c-.34-2.76.92-4.65,3.24-6,.94-.51,1-1-.09-1.35Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-2"
+        d="M443.43,400.57c4.27-1.06,7,2.32,9.92,4.15,2.41,1.52,5,2.95,7.35,4.57l10.51,6.12,1.11.29c.07,1.16.63,1.78,1.85,1.67.79,2.45,4.58,2.79,4.24,6-4.35,4-6.29,9.6-9.38,14.43l.05-.05c-1.12.47-.44.91,0,1.36-.31,3.46-5.51,3.17-5.36,7-3.23,2.21-3.42,4.4,0,6.59l-.05,0a1.12,1.12,0,0,0,1.12,1.11l-.06-.06c.05.3.08.6.11.9,1,3.22-3.08,4-3.24,6.66-2,4.69.63,9,1.17,13.45-1.16,2.32-4.08.41-5.43,2.27-2.57.66-5.24,1.59-6.31-2.15-2.41-2.65-1.93-6.37-3.5-9.33-5.45-2.44-9.85-6.73-15.53-8.73-.33-.12-.83.25-1.55.49a57.84,57.84,0,0,0,15.25,9c.06,1.5-.55,3.12.83,4.37,1.29,2.23,2.13,4.77,4.4,6.32-.09,3.57.67,6,4.72,3.09,1.15-.83,2.93-.28,3.63-1.87l4.64-1c1,3,3.49,3.74,6.19,4.18l-.06-.06c.57,4.53,4.81,5.86,7.49,8.55l0,0c0,1.41,0,2.83,0,4.25-1.66,1.35-.92,3.24-1.09,4.92-.94,9.11-1.87,9.8-11,10-3.75.1-7.7-1.28-11.27,1h0c-1.62.21-3.77-.78-4.26,1.93l-6.37,3.46a3.17,3.17,0,0,0-3,3.64c.48,5.67-2.27,10.44-3.82,15.55l-1.69-.1c-2.73-1.92-3.54,1.32-5.31,2-.68.37-1.06.09-1.24-.58-.15-1.07-.91-1.38-1.84-1.45l-3.33-3.36c.12-1.73-.38-3-2.35-3.19l-2.86-2.82c-2.79-5.68-8.51-6.24-13.87-1.36l-1.12.13c-1.93-3.66-4.28-4.81-7.44-1.27l-1.44.24c-.94,1.49-1.91-1.14-2.85,0l-.49,0-.49.06c-.13-3.39-1.43-4.43-4.35-2.13a6.86,6.86,0,0,1-1-.23c-1.37-3.68-4.4-1.35-6.65-1.82l-.32.1-.34,0c-2-1.27-3.87-3.48-6.55-1.21a4,4,0,0,1-4.17-1.08c-6.47-.18-6.5-.18-5.3-6.61.38-2.05,1.15-4,1.45-6.1.43-2.87.6-5.78-2.5-7.54a1,1,0,0,1-.19-.86c-.85-9.83-4-19.31-4.33-29.22a.79.79,0,0,1,.34-.76l.89-1.06h0c3.1-.61,3.17-2.95,3.08-5.38v-.06c1.5.17,2.2-.55,2.22-2h0c3.7.06,2.11-5.41,5.72-5.44a.82.82,0,0,1,.74.26c1.19,1.46,2.83.84,4.31.93l1,.24c1.3,1.34,2.93.74,4.45.77,7.87,1,14.84,6.95,23.43,4.33.64-.2,1.6.6,2.41.94l4.8.12c3.3-2,7.35-1.48,10.74-3.17a25.65,25.65,0,0,1,5.12.13c.93.2,1.67.74,1.91-.5a1.4,1.4,0,0,0-1.58-1.65c-2.56.13-5.26-.92-7.67.78-3,.28-6,.27-8.58,2.24h-4.7l.48-5.27-.05.05c1.46-1.28,2-3.42,4-4.19a2,2,0,0,0,1.31-1.9c4.62-1.72,5.55-6.18,7.38-10,.94-1.75,2.85-3,2.41-5.43-1.07-5.87,2.61-9.71,6-13.64,4.05-.14,5.12-6.47,10-4.84.39-2.08,3.43-3.77,1-6.29.43-2.5,2.44-1.42,3.72-1.43C443.75,403.94,443.81,402.49,443.43,400.57Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-3"
+        d="M410.58,445.55a2,2,0,0,1-1.31,1.9c-3.91-1.07-5.95-.33-4,4.19l.05-.05c-.65-.09-1.68-.59-1.84.18-1.09,5.32-4.91,4.7-8.51,3.76-5.14-1.34-10.16-3.1-15.24-4.67l-10.58-2.15c-1-1.16-1.88-3.38-3.23-.27-6.28-3.71-9.76-9.19-9.41-16.49.23-4.94-1.13-8.13-6.31-9h.11l-.33-.1c-.36-.77-.57-2.08-1.1-2.23-4.16-1.15-4.55-2.91-1.32-5.73.4-.35.24-1.33.34-2l.71-.94,0,0c.91-5.69-4.37-4.65-6.52-4.64-2.77,0-4.68-.89-5.32-2.77-.69-2,.49-4.19,2.83-5.38,3.82-1.93,7.47-4.17,11.28-6.09,2.49-1.25,3.59-2.84,1.72-5.22s.34-5-.32-7.41c3.48-.61,5.84.89,7.4,3.9,2.55,3,6.28,3.39,9.71,4.46,1.11,4.33,5.1,4.53,8.29,5.1,2.83.51,3.11-3,4.22-4.72,1.74-2.77,2.81-6,4.17-9,1.44-3.79-2.11-8.42,2-11.82.14-.12-.52-1.18-.8-1.8-.91-2-1.94-2.28-3.14-.22-2.54,1.78-.75,4.24-1,6.38,0,1.16-.32,2.38.73,3.31l.21,2.12a61,61,0,0,0-3.34,5.29c-2.47,4.94-5.36,8.56-11.38,4.59-.17-1.88-.11-3.91-2.63-4.39-4.65-.64-7.35-4.72-11.39-6.45,0-2.13-1.51-2.75-3.21-3.16v0c.75-1.85-.46-4.06,1.07-5.76.08-.92.17-1.84.26-2.77,4.45-.82,4-4.73,4.9-7.79.05-.66,2.16-1.09.23-2-.34-1.43-.41-3.33-2.2-3.48-1.28-.1-.84,1.51-1,2.43-2.67.54-4.66.06-4.84-3.17-.16-3.07,3.18-4.34,3.62-7.1l.56-.74-1.28-.51c-5.76-3.08-4.4-9-5.61-13.94.86-3.29,4.55-2.39,6.35-4.28,1.76,2.07,2.47.48,3.23-.92l.08-.08,1.4-.22-1-.73c.48-1,1.41-1.16,2.38-1.21,2.31-.92,2.47-2.94,2.57-5l4.29-1.09c.64,1,1.32,1,2,.07,4.06,0,7.78.94,10.69,4-1.15,2.34.5,2.16,1.94,2.15,1.9,1.69,4.85.52,6.64,2.48,0,1.64-.67,3.66,2.08,3.82l0,.05c.1.87,0,1.95,1.45,1.45,0,0,.33.37.32.37-1.07,1.67-1.13,3,1.21,3.51.8,2,4.5,1.29,4.11,4.4-1.27,1.69.08,1.77,1.22,2l1.21,1.23,1.08.84h0l.09,1.35c-2.32,1.31-3.58,3.2-3.24,6-1.18,2.28-.33,3.27,2.09,3.26l0,0c.83,1.23,1.73,1.64,2.81.26,1.36-1,1.3,1.13,2.26,1,3.53,1.86,5,5.57,7.46,8.38a2.68,2.68,0,0,1-1.35,2.74l-.27-.08c-1.4-.67-3.08-1-4.13-2.06-2.62-2.56-3-.4-3.69,1.46-3.06-1.1-5.57,2-8.59,1.12l.1.06c0-1.12-.75-1-1.49-1-1.11.16-3.22-.41-2.82,1.26s2.69.52,4.11.84l.18-.16c-.09,2.08.23,4.1,2.8,4.12,3.91,0,7-1.38,7.85-6.4,1.21,2.63,2.67,4.43,5.38,4.44,3.09,3.43,7.91,2.21,11.53,4.27,2.36,1.34,5.65.23,7.62,2.76-1.13,4.5-3.09,9.05.74,13.27,1.62,3.32,5,3.24,7.87,4.45,2.18.92,7.6.89,3.88,6-1.94-.36-1.9,2.77-3.94,2.24a2.1,2.1,0,0,0-2.2,1h0c-1.53,1.44-1.64,2.84.14,4.17a8.7,8.7,0,0,0,.89,0c-.66,1.46-1.92,3.45-3.17,2.93-4.28-1.77-5.24,2-7.41,3.79-1.28-.29-2.23,0-2.45,1.45l-.21.06a5.22,5.22,0,0,0-2.67,2.29c-2.95,4.94-3.71,10.44-4.31,16-3.26,3.34-3.88,8.2-6.78,11.74Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-4"
+        d="M457.38,477c1.35-1.86,4.27.05,5.43-2.26.79.36,2.45,1.57,1.84-.47-1.27-4.29-.1-9.12-3-13,.16-2.67,4.21-3.44,3.24-6.66l.61-.54-.72-.36.06.06c.12-.86-.25-1.23-1.12-1.11l.05,0c-1.36-2.19,2.6-4.4,0-6.59-.15-3.82,5.05-3.53,5.36-7l0-1.36-.05.05c3.74.76,4.4-2.37,5.32-4.6,2.43-5.94,3.32-6.54,9.66-5.05,7.19-.91,12.26,3.65,17.13,7.53,5.67,4.51,11.67,8.63,17,13.61,2.52,2.34,1.37,4.6,1.68,6.8.24,1.74-1.91,2.27-3.57,3.1-6.54,3.24-11.27,8.64-15.35,14.57-2.22,3.23-.13,6.26,1,9.24,1.4,3.76,2.57,7.66,4.48,11.15,1.74,3.18.23,4.82-2.17,5.52-4.38,1.27-9.28,2.13-13.06-.94a18.24,18.24,0,0,0-7.21-3.64c-1.16-2.94-4.45-3.3-6.41-5.27l0,0c.81-5.74-4.88-5.81-7.49-8.55l.06.06a6.72,6.72,0,0,0-6.19-4.18l-4.64,1Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M356.16,466.15c.31,9.91,3.48,19.39,4.33,29.22-1.22-.17-2.91-.24-2.88-1.72.16-8.38-3.32-16.23-3.34-24.56C354.26,467.71,354,466.12,356.16,466.15Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6"
+        d="M410.63,368.71c-2.71,0-4.17-1.81-5.38-4.44-.83,5-3.94,6.42-7.85,6.4-2.57,0-2.89-2-2.8-4.12l5.51.08c1.35,1.16,2.19.36,2.94-.77l.06-1.39c.67-1.86,1.07-4,3.69-1.46,1.05,1,2.73,1.39,4.13,2.06l-.17-.07C410.71,366.24,410.67,367.47,410.63,368.71Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M454.19,510c3.57-2.27,7.52-.89,11.27-1,9.16-.24,10.09-.93,11-10,.17-1.68-.57-3.57,1.09-4.92a7.94,7.94,0,0,1,1,.24c.45,4-.6,7.9-1.2,11.81-.43,2.84-1.84,4.41-4.91,3.93Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-7"
+        d="M354.07,344.51c-.44,2.76-3.78,4-3.62,7.1.91-4,2.25-7.76-2.45-10.81-2.38-1.55-2.06-9.42-.26-11.48,1.21,4.92-.15,10.86,5.61,13.94Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M360.68,496.23c3.1,1.76,2.93,4.67,2.5,7.54-.3,2.06-1.07,4.05-1.45,6.1-1.2,6.43-1.17,6.43,5.3,6.61-1.76,1.19-3.74.37-5.6.59-2.8.34-3.3-1.16-2.61-3.51A49.27,49.27,0,0,0,360.68,496.23Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-8"
+        d="M484,428.17c-6.34-1.49-7.23-.89-9.66,5.05-.92,2.23-1.58,5.36-5.32,4.6,3.09-4.83,5-10.41,9.38-14.43C479.15,426.31,483.37,425.14,484,428.17Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6"
+        d="M436.75,534.63c1.55-5.11,4.3-9.88,3.82-15.55a3.17,3.17,0,0,1,3-3.64c-1.73,6-1.07,12.57-4.29,18.25C438.6,534.85,438.3,536.18,436.75,534.63Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-9"
+        d="M355.22,377.28c4,1.73,6.74,5.81,11.39,6.45-2.09,2.77-4.67.36-7,.66-1.56-3-3.92-4.51-7.4-3.9-.48-1.68,3.64-.72,1.82-3.17Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6"
+        d="M347.87,412.9c-.1.69.06,1.67-.34,2-3.23,2.82-2.84,4.58,1.32,5.73.53.15.74,1.46,1.1,2.23a6.11,6.11,0,0,1-1.51-.23c-2.27-1-5.66-1-5.75-4.23C342.62,415.41,345.21,413.89,347.87,412.9Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M404.26,523.74c5.36-4.88,11.08-4.32,13.87,1.36C413.72,522.45,409.05,522.49,404.26,523.74Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6" d="M471.21,415.41l-10.51-6.12C465.55,409,469.87,409.67,471.21,415.41Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6" d="M430.52,389c-3.83-4.22-1.87-8.77-.74-13.27C431.69,380.07,430.34,384.59,430.52,389Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-8" d="M412.55,362.41c-2.47-2.81-3.93-6.52-7.46-8.38C410.41,354.3,412.93,357.07,412.55,362.41Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M365.89,448.44c1.35-3.11,2.24-.89,3.23.27a2.27,2.27,0,0,0-.72,2.73c-3.61,0-2,5.5-5.72,5.44C363.55,454,363.82,450.87,365.89,448.44Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10"
+        d="M437.16,407a8.7,8.7,0,0,1-.89,0c0-1.39-.09-2.78-.14-4.17h0l2.21-1c2,.53,2-2.6,3.94-2.24l1.16,1.08c.38,1.92.32,3.37-2.33,3.38-1.28,0-3.29-1.07-3.72,1.43C437.3,405.92,437.23,406.45,437.16,407Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-11"
+        d="M478.57,494.33a7.94,7.94,0,0,0-1-.24c0-1.42,0-2.84,0-4.25,2,2,5.25,2.33,6.41,5.27C481.82,497.19,480.64,492.69,478.57,494.33Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10" d="M454.19,510l18.27,0c-6.07,2.17-12.3.76-18.47.82.07-.28.13-.56.19-.84Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M358.25,357.82c-.89,3.06-.45,7-4.9,7.79C355.47,363.32,354.62,359.16,358.25,357.82Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M395.7,522.6c3.16-3.54,5.51-2.39,7.44,1.27Z" transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M371.2,517.56c2.68-2.27,4.53-.06,6.55,1.21C375.14,520.66,373.3,518.43,371.2,517.56Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M378.41,518.7c2.25.47,5.28-1.86,6.65,1.82C382.64,520.63,380,521.44,378.41,518.7Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M386.08,520.75c2.92-2.3,4.22-1.26,4.35,2.13C388.36,523.44,387.43,521.66,386.08,520.75Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M360.46,459c.09,2.43,0,4.77-3.08,5.38C358,462.3,358.32,460.11,360.46,459Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M429.75,536.5c1.77-.65,2.58-3.89,5.31-2C433.44,535.59,432.41,538.25,429.75,536.5Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M355.29,354.78c.15-.92-.29-2.53,1-2.43,1.79.15,1.86,2,2.2,3.48Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-13" d="M353.09,368.38c-1.53,1.7-.32,3.91-1.07,5.76C350.42,371.86,349.34,369.67,353.09,368.38Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M421,527.92c2,.19,2.47,1.46,2.35,3.19C421.61,530.74,419.67,530.53,421,527.92Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12"
+        d="M362.74,316.88c-.1,2.06-.26,4.08-2.57,5,0-1.62,1.1-2.95.76-4.78C360.69,315.76,362.08,316.94,362.74,316.88Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M390.41,328.32c-2.75-.16-2.06-2.18-2.08-3.82C390.74,324.84,390.3,326.73,390.41,328.32Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M454.18,510.05c-.06.28-.12.56-.19.84a4,4,0,0,1-4.07,1.09C450.41,509.27,452.56,510.26,454.18,510.05Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M393.43,333.7c-2.34-.51-2.28-1.84-1.21-3.51C394,330.88,393.59,332.34,393.43,333.7Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M357.32,324.12c-.76,1.4-1.47,3-3.23.92C354.59,322.72,356.32,324.69,357.32,324.12Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-8" d="M410.76,365l.17.07.27.08,1.19-.39c-.24.17-.47.45-.73.48A2.37,2.37,0,0,1,410.76,365Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-13" d="M355.22,377.28l-1.18,0c-1.33-.65-2.45-1.44-2-3.2C353.71,374.53,355.21,375.15,355.22,377.28Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M400,352.73c-2.42,0-3.27-1-2.09-3.26A3.5,3.5,0,0,1,400,352.73Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M391.41,522.86c.94-1.16,1.91,1.47,2.85,0-.11.82-.25,1.61-1.36,1.58S391.57,523.7,391.41,522.86Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M362.69,456.88c0,1.46-.72,2.18-2.22,2C360.37,457.3,361.3,456.83,362.69,456.88Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M381.69,322c-1.44,0-3.09.19-1.94-2.15A2.4,2.4,0,0,1,381.69,322Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M402.83,353c-1.08,1.38-2,1-2.81-.26Z" transform="translate(-117 -203.99)" />
+    <path class="cls-6" d="M474.17,417.37c-1.22.11-1.78-.51-1.85-1.67A2.21,2.21,0,0,1,474.17,417.37Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M398.76,340.08c-1.14-.21-2.49-.29-1.22-2C398,338.76,398.36,339.42,398.76,340.08Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M391.9,329.82c-1.47.5-1.35-.58-1.45-1.45A1.73,1.73,0,0,1,391.9,329.82Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M357.79,323.09l1,.73-1.4.22A1.23,1.23,0,0,1,357.79,323.09Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M369.06,315.86c-.71.94-1.39.91-2-.07Z" transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M426.67,534.47c.93.07,1.69.38,1.84,1.45C427.77,535.59,426.68,535.71,426.67,534.47Z"
+        transform="translate(-117 -203.99)" />
+    <polygon class="cls-6" points="233.28 218.99 233.17 218.99 233.36 219.26 233.28 218.99" />
+    <path class="cls-12" d="M401.15,343.51l-.09-1.35C402.1,342.55,402.09,343,401.15,343.51Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-6" d="M348.55,412l0,0Z" transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M357.39,464.33l-.89,1.06Z" transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M401.05,342.15l-1.08-.84C400.65,341.18,401,341.54,401.05,342.15Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-13"
+        d="M379.7,450.86c5.08,1.57,10.1,3.33,15.24,4.67,3.6.94,7.42,1.56,8.51-3.76.16-.77,1.19-.27,1.84-.18-.15,1.64-.3,3.27-.48,5.27h4.7c0,.46-.05.92-.08,1.38-1.57.11-3.25-.58-4.66.67-.81-.34-1.77-1.14-2.41-.94-8.59,2.62-15.56-3.3-23.43-4.33a5.11,5.11,0,0,0-.37-.91A1.93,1.93,0,0,0,379.7,450.86Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-14"
+        d="M416.94,433.51c.6-5.56,1.36-11.06,4.31-16a5.22,5.22,0,0,1,2.67-2.29,3.13,3.13,0,0,0,2.46,1.29c-3.4,3.93-7.08,7.77-6,13.64.44,2.42-1.47,3.68-2.41,5.43Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-9"
+        d="M426.38,416.51a3.13,3.13,0,0,1-2.46-1.29l.21-.05c1.39.48,2.18-.06,2.45-1.46,2.17-1.77,3.13-5.56,7.41-3.79,1.25.52,2.51-1.47,3.17-2.93.07-.54.14-1.07.22-1.61,2.46,2.52-.58,4.21-1,6.29C431.5,410,430.43,416.37,426.38,416.51Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-13"
+        d="M445.74,466.31a57.84,57.84,0,0,1-15.25-9c.72-.24,1.22-.61,1.55-.49,5.68,2,10.08,6.29,15.53,8.73l-.92,1.14A2,2,0,0,0,445.74,466.31Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10"
+        d="M416.94,433.51l1,2.07c-1.83,3.79-2.76,8.25-7.38,10l-.42-.3C413.06,441.71,413.68,436.85,416.94,433.51Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-15"
+        d="M461.64,461.27c2.91,3.87,1.74,8.7,3,13,.61,2-1,.83-1.84.47C462.27,470.25,459.61,466,461.64,461.27Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-11"
+        d="M457.38,477l1.94,1.23c-.7,1.59-2.48,1-3.63,1.87-4.05,2.92-4.81.48-4.72-3.09,0-.72.07-1.44.1-2.16C452.14,478.58,454.81,477.65,457.38,477Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10"
+        d="M379.7,450.86a1.93,1.93,0,0,1-1.14,1.87l-4.08.14-1-.23c-1.16-1.59-2.84-.77-4.31-.94a.82.82,0,0,0-.74-.26,2.27,2.27,0,0,1,.72-2.73Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-8"
+        d="M409.43,458.24c0-.46.05-.92.08-1.38,2.54-2,5.6-2,8.58-2.24.88.16,1.86.15,2.22,1.24-3.39,1.69-7.44,1.17-10.74,3.17A4.22,4.22,0,0,1,409.43,458.24Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-11" d="M470.09,481.33c2.61,2.74,8.3,2.81,7.49,8.55C474.9,487.19,470.66,485.86,470.09,481.33Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10"
+        d="M451.07,474.84c0,.72-.06,1.44-.1,2.16-2.27-1.55-3.11-4.09-4.4-6.32,0-1.35.05-2.69.08-4l.92-1.14C449.14,468.47,448.66,472.19,451.07,474.84Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5"
+        d="M420.31,455.86c-.36-1.09-1.34-1.08-2.22-1.24,2.41-1.7,5.11-.65,7.67-.78a1.4,1.4,0,0,1,1.58,1.65c-.24,1.24-1,.7-1.91.5A25.65,25.65,0,0,0,420.31,455.86Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-14" d="M463.74,446.12c2.62,2.19-1.34,4.4,0,6.59C460.32,450.52,460.51,448.33,463.74,446.12Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-11" d="M464,477.21a6.72,6.72,0,0,1,6.19,4.18C467.45,481,465,480.19,464,477.21Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-13" d="M405.24,451.64c-1.92-4.52.12-5.26,4-4.19C407.27,448.22,406.7,450.36,405.24,451.64Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M446.65,466.65c0,1.34,0,2.68-.08,4-1.38-1.25-.77-2.87-.83-4.37A2,2,0,0,1,446.65,466.65Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M369.14,451.7c1.47.17,3.15-.65,4.31.94C372,452.54,370.33,453.16,369.14,451.7Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M409.43,458.24a4.22,4.22,0,0,0,.14.79l-4.8-.12C406.18,457.66,407.86,458.35,409.43,458.24Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-5" d="M374.48,452.87l4.08-.14a5.11,5.11,0,0,1,.37.91C377.41,453.61,375.78,454.21,374.48,452.87Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-14" d="M463.71,452.66c.87-.12,1.24.25,1.12,1.11A1.12,1.12,0,0,1,463.71,452.66Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-14" d="M464.77,453.71l.72.36-.61.54C464.85,454.31,464.82,454,464.77,453.71Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-8" d="M469.08,437.77l0,1.36C468.64,438.68,468,438.24,469.08,437.77Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-7"
+        d="M386,380.27c-1.36,3-2.43,6.19-4.17,9-1.11,1.76-1.39,5.23-4.22,4.72-3.19-.57-7.18-.77-8.29-5.1a6.06,6.06,0,0,0-.09-.73c6,4,8.91.35,11.38-4.59a61,61,0,0,1,3.34-5.29A2.81,2.81,0,0,0,386,380.27Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-10"
+        d="M386,380.27a2.81,2.81,0,0,1-2.05-2l-.21-2.12c.11-1.18.54-2.44-.73-3.31.27-2.14-1.52-4.6,1-6.38l3.14.22c.28.62.94,1.68.8,1.8C383.9,371.85,387.45,376.48,386,380.27Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12"
+        d="M369.24,388.12a6.06,6.06,0,0,1,.09.73c-3.43-1.07-7.16-1.48-9.71-4.46,2.32-.3,4.9,2.11,7-.66C369.13,384.21,369.07,386.24,369.24,388.12Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-9"
+        d="M400.11,366.63l-5.51-.08-.18.16c0-.38.07-.75.1-1.12,3,.86,5.53-2.22,8.59-1.12l-.06,1.39C402,365.73,400.8,365.26,400.11,366.63Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-16" d="M394.52,365.59c0,.37-.07.74-.1,1.12-1.42-.32-3.68.93-4.11-.84s1.71-1.1,2.82-1.26l1.49,1Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-4" d="M436.13,402.78c.05,1.39.09,2.78.14,4.17C434.49,405.62,434.6,404.22,436.13,402.78Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-14" d="M426.58,413.71c-.27,1.4-1.06,1.94-2.45,1.46C424.35,413.67,425.3,413.42,426.58,413.71Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M387.18,366.65l-3.14-.22C385.24,364.37,386.27,364.68,387.18,366.65Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M383,372.81c1.27.87.84,2.13.73,3.31C382.7,375.19,383,374,383,372.81Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-12" d="M354.07,344.51l-.72-1.25,1.28.51Z" transform="translate(-117 -203.99)" />
+    <path class="cls-4" d="M438.33,401.73l-2.21,1A2.12,2.12,0,0,1,438.33,401.73Z" transform="translate(-117 -203.99)" />
+    <path class="cls-9" d="M394.62,365.65l-1.49-1C393.87,364.61,394.66,364.53,394.62,365.65Z"
+        transform="translate(-117 -203.99)" />
+    <path class="cls-16" d="M400.11,366.63c.69-1.37,1.86-.9,2.94-.77C402.3,367,401.46,367.79,400.11,366.63Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M393.88,488.73c-.62,0-1.07-.22-1.07-.69a1.81,1.81,0,0,1,.19-.68,4.3,4.3,0,0,1,1.87-1.61l0-.44a4.19,4.19,0,0,1,.46-.48h.07c0,.9,0,1.82,0,2.73,0,.41.05.67.22.82a1,1,0,0,0,.62.16h.14v.75h-.13a1.1,1.1,0,0,1-1.21-.82A2.79,2.79,0,0,1,393.88,488.73Zm1-2.33c-1,.54-1.58,1-1.58,1.28s.35.33.75.33a2.55,2.55,0,0,0,.86-.17Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M400.89,489.29h-.12a1.81,1.81,0,0,1-1.51-1c-.2-.26-.38-.5-.52-.65h0c0,.91-.52,1.6-2.18,1.6h-.16a.38.38,0,0,1-.41-.4.36.36,0,0,1,.41-.35h.23a2.72,2.72,0,0,0,1.42-.34c.12-.08.29-.21.29-.29a1,1,0,0,0-.12-.4,6.48,6.48,0,0,0-1.39-1.59c-.16-.16-.32-.3-.4-.4a1.18,1.18,0,0,1,0-.27,1,1,0,0,1,.16-.51.53.53,0,0,1,.21-.18,17.91,17.91,0,0,1,3.57-1.36v0a4.56,4.56,0,0,1-.41.7c-.35.09-.85.26-1.34.43-.7.27-1.39.54-1.8.75h0a7,7,0,0,0,1,.41l-.18.31a19.85,19.85,0,0,1,2.1,2.11,1.45,1.45,0,0,0,1.14.6h.1Zm-4.24-5.21a1.5,1.5,0,0,1,.15-.38,21.08,21.08,0,0,1,3.21-1.17v0l-.21.35a20.71,20.71,0,0,0-3.12,1.19Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M401,488.54a1.5,1.5,0,0,0,.68-.19c.17-.1.28-.28.28-.7,0-1.18-.07-2.23-.15-3.58l0-.29.52-.53h0c.11,1.38.12,2.81.12,4.61,0,.27.18.67.86.67h.08v.75h-.12a1.1,1.1,0,0,1-1.14-.63h0a1.23,1.23,0,0,1-1.13.63h-.1a.38.38,0,0,1-.41-.4.36.36,0,0,1,.41-.35Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M403.77,488.54a6.13,6.13,0,0,0,3.13-1.06v0a5.56,5.56,0,0,0-1.84-.41,1,1,0,0,0-.74.29l.07.3-.18.52h-.06l-.28-.77a1.15,1.15,0,0,1,1.27-1.05,5.62,5.62,0,0,1,1.92.51,2.79,2.79,0,0,0,1,.18h.5l-.32.62a1.76,1.76,0,0,0-1,.21l-1,.64a4.55,4.55,0,0,1-2.53.79h-.31a.38.38,0,0,1-.41-.4.36.36,0,0,1,.41-.35Zm1.79,1.62a5,5,0,0,1,.7.63,2.39,2.39,0,0,1-.49.57c-.23-.22-.46-.4-.69-.6C405.24,490.55,405.4,490.34,405.56,490.16Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M415.33,485.89a5,5,0,0,1,.63,2.41,2.59,2.59,0,0,1-.42,1.49,2.83,2.83,0,0,1-2,.89,1.69,1.69,0,0,1-1.8-1.78,3.11,3.11,0,0,1,.5-1.7l.23.12a2.75,2.75,0,0,0-.33,1.1,1.29,1.29,0,0,0,.39,1,1.69,1.69,0,0,0,1.11.39,2.53,2.53,0,0,0,1.42-.51c.25-.2.4-.37.4-.49a3.39,3.39,0,0,0-.18-1,5.32,5.32,0,0,0-.49-1.16c.14-.24.28-.49.45-.74Zm-1.6-1.89a5.17,5.17,0,0,1,.71.63,2.39,2.39,0,0,1-.49.57c-.23-.22-.46-.4-.69-.6C413.42,484.39,413.58,484.18,413.73,484Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M418.55,489.29h-.06a1.32,1.32,0,0,1-1-.34c-.35-.36-.36-.78-.36-1.64,0-1.11-.06-2.28-.15-3.52a5.68,5.68,0,0,1,.55-.55l0,0c.09,1.28.09,2.8.09,4.24v.33a.62.62,0,0,0,.44.63,1.34,1.34,0,0,0,.38.07h.08Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M418.68,488.54c.45,0,.92-.19,1-.52l.17-.63.4-.3,0,.05a3.24,3.24,0,0,0-.13.67.58.58,0,0,0,.19.49,1.12,1.12,0,0,0,.73.24h.1v.75h-.13a1.18,1.18,0,0,1-1.21-.6h0a1.27,1.27,0,0,1-1.17.6h-.11a.38.38,0,0,1-.41-.4.36.36,0,0,1,.41-.35Zm.66,3.08-.68-.61a4.45,4.45,0,0,1,.46-.55,6.39,6.39,0,0,1,.67.62A2.85,2.85,0,0,1,419.34,491.62Zm1.13-.07c-.24-.23-.45-.42-.68-.61a4.59,4.59,0,0,1,.46-.56,5.58,5.58,0,0,1,.67.63A3.21,3.21,0,0,1,420.47,491.55Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M421.32,488.54c.44,0,.78-.3,1-1a1.64,1.64,0,0,1,.43-.71,1.11,1.11,0,0,1,.74-.34c.71,0,1.14,1,1.23,2-.12.53-.34.76-.62.76a3,3,0,0,1-1.74-.7h0a1,1,0,0,1-1,.77h-.1a.38.38,0,0,1-.41-.4.36.36,0,0,1,.41-.35Zm2.05-.24a1.8,1.8,0,0,0,.7.17c.09,0,.16,0,.19-.06-.17-.89-.56-1.28-.93-1.28a.85.85,0,0,0-.78.57A1.73,1.73,0,0,0,423.37,488.3Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M477.76,458.54a5,5,0,0,1,.62,2.4,2.57,2.57,0,0,1-.41,1.49,2.81,2.81,0,0,1-2,.89,1.68,1.68,0,0,1-1.8-1.77,3.12,3.12,0,0,1,.5-1.71l.22.13a2.67,2.67,0,0,0-.33,1.09,1.29,1.29,0,0,0,.4,1,1.63,1.63,0,0,0,1.1.39,2.53,2.53,0,0,0,1.42-.51c.26-.2.41-.37.41-.48a3.74,3.74,0,0,0-.18-1,5.2,5.2,0,0,0-.5-1.15,8.12,8.12,0,0,1,.45-.74Zm-1.6-1.9a5.11,5.11,0,0,1,.7.63,2.14,2.14,0,0,1-.48.57l-.69-.6C475.85,457,476,456.83,476.16,456.64Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M481,461.93h-.07a1.29,1.29,0,0,1-1-.34c-.36-.36-.36-.77-.36-1.64,0-1.11-.07-2.28-.15-3.52a5.47,5.47,0,0,1,.55-.54l0,0c.09,1.28.09,2.8.09,4.24v.34a.6.6,0,0,0,.44.62,1.06,1.06,0,0,0,.38.07H481Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M481.34,461.18a6.09,6.09,0,0,0,3.12-1.06v0a5.56,5.56,0,0,0-1.84-.41.93.93,0,0,0-.74.3l.07.29-.18.53h-.06l-.28-.78a1.15,1.15,0,0,1,1.27-1,5.67,5.67,0,0,1,1.92.51,3,3,0,0,0,1,.19h.49l-.31.62a1.85,1.85,0,0,0-1,.21l-1,.64a4.59,4.59,0,0,1-2.54.79H481a.38.38,0,0,1-.41-.39.36.36,0,0,1,.41-.36Zm1.67-4.24a5.77,5.77,0,0,1,.7.63,2.39,2.39,0,0,1-.49.57l-.69-.6C482.69,457.33,482.85,457.12,483,456.94Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M488.17,459.91c.34.81.64,1.27,1.32,1.27h.11v.75h-.13a.81.81,0,0,1-.59-.19h0c0,.07,0,.14,0,.21a2,2,0,0,1-.23.9c-.47.82-1,1.17-1.4,1.17a3.42,3.42,0,0,1-1.47-.46l.09-.2a1.47,1.47,0,0,0,.67.13,2.32,2.32,0,0,0,2-1.75,1.17,1.17,0,0,0-.16-.27,5.13,5.13,0,0,1-.51-.87c.12-.27.22-.49.32-.68Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M489.7,461.18a3.93,3.93,0,0,0,1.15-.11c.21-.08.34-.16.34-.26a5,5,0,0,0-.59-1.45,5,5,0,0,1,.44-.66h0a4.11,4.11,0,0,1,.58,1.79,1.72,1.72,0,0,1-.41,1.09c-.26.26-.68.35-1.57.35h-.07a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36Zm1.1,1.86a5,5,0,0,1,.71.62,2.44,2.44,0,0,1-.49.58c-.23-.22-.46-.41-.69-.61Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M494.52,458.91l.42.79a2.23,2.23,0,0,1,.29,1.11v.64a2.7,2.7,0,0,1-.73,1.63,1.4,1.4,0,0,1-1,.54,3.52,3.52,0,0,1-1.51-.45l.07-.2a2.34,2.34,0,0,0,.65.1,2.51,2.51,0,0,0,2.05-1.58.6.6,0,0,0,.07-.26,1.18,1.18,0,0,0-.08-.31,8.78,8.78,0,0,0-.71-1.29c.14-.25.27-.49.42-.73Zm-.53-2a4.94,4.94,0,0,1,.7.62,2.26,2.26,0,0,1-.49.58c-.23-.22-.45-.41-.69-.6Q493.75,457.15,494,456.88Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M438.13,440.26c-.11-.5-.28-.74-.44-.74a1.72,1.72,0,0,0-.94.42c-.32.26-.57.54-.57.76,0,.52,1.52.45,1.93.79a.78.78,0,0,1,.26.65,1.82,1.82,0,0,1-.48,1.09,3.57,3.57,0,0,1-2.26,1,1.93,1.93,0,0,1-2-2.15,3.55,3.55,0,0,1,.31-1.45l.23.08a3.18,3.18,0,0,0-.18,1,1.61,1.61,0,0,0,1.72,1.71,3.41,3.41,0,0,0,1.58-.49,2.1,2.1,0,0,0,.73-.58c0-.18-.43-.31-.91-.38a2.12,2.12,0,0,1-1.08-.36.77.77,0,0,1-.21-.53,2.15,2.15,0,0,1,.65-1.51,2.63,2.63,0,0,1,1.45-.83.47.47,0,0,1,.43.31,1.44,1.44,0,0,1,.14.55,2.18,2.18,0,0,1-.24.65Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M440.79,440.48c.33.81.64,1.27,1.32,1.27h.1v.75h-.12a.79.79,0,0,1-.59-.19h0c0,.07,0,.14,0,.21a2,2,0,0,1-.24.91c-.46.81-1,1.16-1.4,1.16a3.34,3.34,0,0,1-1.46-.46l.09-.19a1.6,1.6,0,0,0,.67.12,2.32,2.32,0,0,0,2-1.75,1.7,1.7,0,0,0-.16-.27,5.13,5.13,0,0,1-.51-.87,7.49,7.49,0,0,1,.32-.68Zm-.51-2a4.45,4.45,0,0,1,.7.62,2.39,2.39,0,0,1-.48.58c-.23-.22-.46-.41-.69-.61A7.16,7.16,0,0,1,440.28,438.45Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M445.86,436.2c-.13.24-.28.48-.44.72a9,9,0,0,0-.94.28c-.63.22-1.26.48-1.93.77v0l.95.37-.14.29c.91.73,1.51,1.48,1.51,2.09a1.78,1.78,0,0,1-.38,1.22,3,3,0,0,1-2,.54h-.24a.37.37,0,0,1-.41-.39.37.37,0,0,1,.41-.36h.37a3.13,3.13,0,0,0,1.57-.3c.21-.13.32-.25.32-.32a1.71,1.71,0,0,0-.4-.88,9.91,9.91,0,0,0-1.77-1.66.64.64,0,0,1-.21-.54.78.78,0,0,1,.14-.37,1,1,0,0,1,.44-.36,24.76,24.76,0,0,1,3.15-1.17Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M447,440.48c.34.81.64,1.27,1.32,1.27h.11v.75h-.13a.81.81,0,0,1-.59-.19h0a1.48,1.48,0,0,1,0,.21,2.11,2.11,0,0,1-.23.91c-.47.81-1,1.16-1.4,1.16a3.42,3.42,0,0,1-1.47-.46l.09-.19a1.64,1.64,0,0,0,.67.12,2.32,2.32,0,0,0,2-1.75,1.17,1.17,0,0,0-.16-.27,5.89,5.89,0,0,1-.51-.87c.12-.27.22-.49.32-.68Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M448.54,441.75c.43,0,.77-.3,1-1A2,2,0,0,1,450,440a1.11,1.11,0,0,1,.74-.34c.72,0,1.14,1,1.23,2-.12.54-.34.76-.62.76a3,3,0,0,1-1.74-.69h0a1,1,0,0,1-1,.76h-.1a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36Zm2-.23a1.89,1.89,0,0,0,.69.17c.09,0,.17,0,.19-.07-.17-.88-.55-1.28-.92-1.28a.85.85,0,0,0-.79.58A1.88,1.88,0,0,0,450.59,441.52Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M369.8,412c-.62,0-1.07-.21-1.07-.68a1.85,1.85,0,0,1,.19-.69,4.31,4.31,0,0,1,1.87-1.61l0-.44a4.19,4.19,0,0,1,.46-.48h.06c0,.91,0,1.82,0,2.73,0,.41.05.68.22.83a1,1,0,0,0,.62.15h.14v.75h-.13a1.08,1.08,0,0,1-1.21-.81A3,3,0,0,1,369.8,412Zm1-2.33c-1,.54-1.58,1-1.58,1.29s.35.32.75.32a2.78,2.78,0,0,0,.86-.16Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M376.81,412.57h-.12a1.84,1.84,0,0,1-1.52-.95c-.19-.25-.37-.49-.51-.65h0c0,.92-.53,1.6-2.18,1.6h-.16a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36h.23a2.62,2.62,0,0,0,1.42-.34c.12-.07.29-.2.29-.29a1.08,1.08,0,0,0-.12-.39,6.51,6.51,0,0,0-1.39-1.59c-.16-.17-.32-.31-.4-.41a1.12,1.12,0,0,1,0-.27,1,1,0,0,1,.16-.5.65.65,0,0,1,.21-.19,19,19,0,0,1,3.57-1.36v0a4.47,4.47,0,0,1-.41.69c-.35.09-.85.26-1.34.44a16.8,16.8,0,0,0-1.8.75h0a7.58,7.58,0,0,0,.95.4l-.18.31a20.85,20.85,0,0,1,2.1,2.11,1.42,1.42,0,0,0,1.14.6h.1Zm-4.24-5.21a2.57,2.57,0,0,1,.14-.38,22,22,0,0,1,3.21-1.16h0l-.22.36a21.8,21.8,0,0,0-3.11,1.18Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M376.93,411.82a1.53,1.53,0,0,0,.68-.18c.17-.1.28-.29.28-.7,0-1.18-.07-2.24-.15-3.58l0-.3.52-.52h0c.11,1.37.12,2.81.12,4.6,0,.27.18.67.86.67h.08v.75h-.12a1.14,1.14,0,0,1-1.15-.62h0a1.24,1.24,0,0,1-1.13.62h-.1a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M379.69,411.82a6,6,0,0,0,3.13-1.06v0a5.56,5.56,0,0,0-1.84-.41.92.92,0,0,0-.74.29l.07.29-.18.53h-.06l-.28-.77a1.16,1.16,0,0,1,1.27-1.06,5.62,5.62,0,0,1,1.92.51,3,3,0,0,0,1,.19h.48v0l-.31.61a1.75,1.75,0,0,0-1,.22l-1,.64a4.55,4.55,0,0,1-2.54.78h-.3a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36Zm1.78,1.62a5.84,5.84,0,0,1,.71.63,2.44,2.44,0,0,1-.49.58c-.23-.22-.46-.41-.69-.61Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M395.13,412.57H395c-.57,0-1-.11-1.19-.51a3.86,3.86,0,0,1-.92.38,8.69,8.69,0,0,1-2.27.37,3.72,3.72,0,0,1-2-.46,1.81,1.81,0,0,1-.86-1.58,2.94,2.94,0,0,1,.34-1.42l.24.1a2.89,2.89,0,0,0-.17.89,1.52,1.52,0,0,0,.77,1.29,3.64,3.64,0,0,0,1.86.38,8.93,8.93,0,0,0,2-.26,3.87,3.87,0,0,0,.77-.26l.26-.82.37-.29,0,0a2.6,2.6,0,0,0-.14.66.61.61,0,0,0,.2.52,1.13,1.13,0,0,0,.73.22h.11Zm-4.52-3.67c-.24-.23-.45-.42-.68-.61a5.76,5.76,0,0,1,.46-.56,5.58,5.58,0,0,1,.67.63A2.8,2.8,0,0,1,390.61,408.9Zm1.14-.08-.69-.61a5.55,5.55,0,0,1,.46-.55,5.47,5.47,0,0,1,.67.62A2.84,2.84,0,0,1,391.75,408.82Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M398.62,410.74a5.56,5.56,0,0,0-1.84-.41.94.94,0,0,0-.75.29l.07.29-.17.53h-.06l-.29-.77a1.17,1.17,0,0,1,1.27-1.06,5.71,5.71,0,0,1,1.93.51,2.78,2.78,0,0,0,1,.19h.52l-.36.6a1.79,1.79,0,0,0-1,.23l-1,.64a4.62,4.62,0,0,1-2.57.78h-.27a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36h.35a6,6,0,0,0,3.13-1.06Zm-1.47-3.16a5.84,5.84,0,0,1,.71.63,2.44,2.44,0,0,1-.49.58c-.23-.22-.46-.41-.69-.61Zm2.12,3.56h0c0,.5.44.68,1,.68h.16v.75h-.18c-.76,0-1.26-.26-1.26-1,0-.11,0-.21,0-.32Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M400.59,411.82a3.93,3.93,0,0,0,1.15-.11c.21-.08.34-.16.34-.26a5.14,5.14,0,0,0-.59-1.45,5,5,0,0,1,.44-.66h0a4.16,4.16,0,0,1,.58,1.79,1.72,1.72,0,0,1-.41,1.09c-.26.26-.68.35-1.57.35h-.07a.37.37,0,0,1-.41-.39.36.36,0,0,1,.41-.36Zm.44-3c-.24-.23-.45-.42-.69-.61.15-.21.32-.4.46-.56a5.58,5.58,0,0,1,.67.63A3.2,3.2,0,0,1,401,408.84Zm1.13-.08c-.24-.23-.45-.41-.69-.61a5.55,5.55,0,0,1,.46-.55,5.47,5.47,0,0,1,.67.62A2.84,2.84,0,0,1,402.16,408.76Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M374.12,348.57H374c-.58,0-1-.11-1.2-.51a3.58,3.58,0,0,1-.91.38,8.7,8.7,0,0,1-2.28.37,3.68,3.68,0,0,1-2-.46,1.79,1.79,0,0,1-.87-1.58,3,3,0,0,1,.35-1.42l.23.1a2.89,2.89,0,0,0-.17.89,1.51,1.51,0,0,0,.78,1.29,3.64,3.64,0,0,0,1.86.38,8.84,8.84,0,0,0,2-.26,4,4,0,0,0,.78-.26l.26-.82.37-.29,0,0a2.23,2.23,0,0,0-.14.66.61.61,0,0,0,.2.52,1.12,1.12,0,0,0,.73.22h.1Zm-4.51-3.67c-.24-.23-.45-.42-.68-.61a4.59,4.59,0,0,1,.46-.56,5.58,5.58,0,0,1,.67.63A3.77,3.77,0,0,1,369.61,344.9Zm1.13-.08c-.24-.23-.45-.41-.68-.61a4.45,4.45,0,0,1,.46-.55,5.47,5.47,0,0,1,.67.62A2.85,2.85,0,0,1,370.74,344.82Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M374.22,347.82a4,4,0,0,0,1.16-.11c.2-.08.33-.16.33-.26a4.72,4.72,0,0,0-.59-1.44,5.56,5.56,0,0,1,.44-.67h0a4.17,4.17,0,0,1,.59,1.79,1.78,1.78,0,0,1-.41,1.09c-.26.26-.68.35-1.58.35h-.07a.37.37,0,0,1-.41-.39.37.37,0,0,1,.41-.36Zm.58,3.09c-.24-.23-.45-.42-.69-.61.15-.21.32-.4.46-.56a5.58,5.58,0,0,1,.67.63A3.2,3.2,0,0,1,374.8,350.91Zm1.13-.08c-.24-.23-.45-.41-.69-.61a5.55,5.55,0,0,1,.46-.55,5.47,5.47,0,0,1,.67.62A2.84,2.84,0,0,1,375.93,350.83Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M380.63,342.57s0,.08,0,.12a2.54,2.54,0,0,0,.48,1.19,2.27,2.27,0,0,1-.36.29c0,.72,0,1.39,0,2.1a3.74,3.74,0,0,1-.19,1.15,1.94,1.94,0,0,1-.65,1,2.68,2.68,0,0,1-1.47.5,4.8,4.8,0,0,1-1.45-.27v-.07a7.18,7.18,0,0,0,2.63-.76,4.54,4.54,0,0,0-.66-1.2c-.38-.57-.8-1.17-1.28-1.87a2.88,2.88,0,0,1-.58-1.09,1.61,1.61,0,0,1,.27-.56h0a10.26,10.26,0,0,0,.95,1l-.19.33c.54.84,1.05,1.61,1.4,2.22a2.08,2.08,0,0,1,.25,1h0a1.23,1.23,0,0,0,.47-1.07c0-.59-.06-1.34-.16-2.36,0-.27-.07-.65-.07-.92a.58.58,0,0,1,.13-.41,2.38,2.38,0,0,1,.34-.38Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M383.34,348c-.69,0-1.28-.33-1.28-1.11a1.59,1.59,0,0,1,.38-1,1.23,1.23,0,0,1,.83-.49,1.08,1.08,0,0,1,.89.66,3.42,3.42,0,0,1,.37,1.61,2.81,2.81,0,0,1-.44,1.55c-.52.79-1,1.11-1.51,1.11a3,3,0,0,1-1.68-.58l.09-.18a1.93,1.93,0,0,0,.86.2,2.35,2.35,0,0,0,1.72-.9,1.94,1.94,0,0,0,.55-1A2.94,2.94,0,0,1,383.34,348Zm-.26-1.86c-.27,0-.65.3-.65.52s.51.62,1,.62a2.9,2.9,0,0,0,.66-.07C383.93,346.57,383.59,346.1,383.08,346.1Z"
+        transform="translate(-117 -203.99)" />
+    <path
+        d="M390.49,347.65c.2-.15.23-.32.41-.93l.36-.2,0,0a2.44,2.44,0,0,0-.08.57.64.64,0,0,0,.61.68.27.27,0,0,0,.31-.27,5.89,5.89,0,0,0-.14-.95,3.72,3.72,0,0,1,.53-.52h0a6.79,6.79,0,0,1,.09,1.05,1.94,1.94,0,0,1-.21.8,1.1,1.1,0,0,1-.86.64,1,1,0,0,1-.74-.48h0a1.28,1.28,0,0,1-.93.5,1,1,0,0,1-1-1.12,10.19,10.19,0,0,0-1.36.49,1.39,1.39,0,0,1,.07.44c0,.24,0,.49,0,.74a1.77,1.77,0,0,1-.45,1.11,1.8,1.8,0,0,1-1.29.71,2.61,2.61,0,0,1-1.42-.56l.09-.17a1.68,1.68,0,0,0,.71.15,2.29,2.29,0,0,0,1.51-.65c.38-.38.58-.67.58-.95a1.37,1.37,0,0,0-.43-.7,6.17,6.17,0,0,1,.18-.71,13,13,0,0,1,2.19-.69v0a1.34,1.34,0,0,0,0,.35.79.79,0,0,0,.75.77A1,1,0,0,0,390.49,347.65Z"
+        transform="translate(-117 -203.99)" />
+</svg>
